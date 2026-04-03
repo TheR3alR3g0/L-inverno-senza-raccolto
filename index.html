@@ -1,0 +1,1170 @@
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Documento Recuperato</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Georgia,serif;
+background:linear-gradient(#4f5f69,#95a7b3);
+color:#111;
+overflow-x:hidden;
+}
+
+/* DOCUMENTO */
+
+.container{
+position:relative;
+max-width:900px;
+margin:120px auto;
+padding:70px;
+background:rgba(255,255,255,0.92);
+box-shadow:0 40px 80px rgba(0,0,0,0.6);
+border-radius:6px;
+z-index:5;
+}
+
+h1{
+text-align:center;
+letter-spacing:3px;
+font-weight:normal;
+margin-bottom:40px;
+}
+
+.content{
+font-size:18px;
+line-height:1.8;
+white-space:pre-wrap;
+}
+
+/* NEBBIA */
+
+.fog-back{
+position:fixed;
+width:200%;
+height:100%;
+background:radial-gradient(circle, rgba(255,255,255,0.2), transparent 70%);
+animation:fog1 80s linear infinite;
+z-index:1;
+}
+
+.fog-front{
+position:fixed;
+width:200%;
+height:100%;
+background:radial-gradient(circle, rgba(255,255,255,0.35), transparent 60%);
+animation:fog2 40s linear infinite;
+pointer-events:none;
+z-index:10;
+}
+
+@keyframes fog1{
+from{transform:translateX(0)}
+to{transform:translateX(-50%)}
+}
+
+@keyframes fog2{
+from{transform:translateX(0)}
+to{transform:translateX(-40%)}
+}
+
+/* NEVE */
+
+.snow-layer{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+}
+
+.flake{
+position:absolute;
+background:white;
+border-radius:50%;
+animation:snow linear infinite;
+}
+
+@keyframes snow{
+0%{transform:translateY(-10vh)}
+100%{transform:translateY(110vh)}
+}
+
+/* CONTAMINAZIONE */
+
+.infection{
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+z-index:4;
+}
+
+.vein{
+position:absolute;
+height:3px;
+background:linear-gradient(90deg,rgba(100,0,0,0.7),rgba(255,0,0,0.4));
+transform-origin:left;
+animation:grow 20s linear forwards;
+filter:blur(1px);
+}
+
+@keyframes grow{
+0%{width:0}
+100%{width:300px}
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+margin-top:40px;
+font-size:12px;
+color:#333;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="fog-back"></div>
+
+<div class="snow-layer" id="snowFar"></div>
+<div class="snow-layer" id="snowMid"></div>
+<div class="snow-layer" id="snowNear"></div>
+
+<div class="infection" id="infection"></div>
+
+
+<div class="container">
+<footer>
+Archivio • Documento recuperato dagli Archivi della Comunità "I Deragliati" - Anno 77 Dopo La Piaga
+</footer>
+<h1>L'inverno senza raccolto - Una Crisi in tre atti per Dead Air Seasons</h1>
+<div class="content">
+
+<u>Tema</u> centrale: <strong>Quanto vale una vita quando la comunità rischia di morire?</strong>
+Tono: crudo, realistico, niente eroi.
+<h2>LA COMUNITÀ (base di partenza)</h2>
+Comunità di 50 persone.
+Scorte teoriche per 6-8 settimane. L’inverno durerà 14.
+
+Problema: il grano conservato nel silo principale è contaminato da muffa tossica (non evidente subito).
+
+PNG chiave interni:
+<ul>
+ 	<li><strong>Marta</strong>, responsabile scorte (ha nascosto i primi segnali per non creare panico)</li>
+ 	<li><strong>Ivo</strong>, capo sicurezza, pragmatico</li>
+ 	<li><strong>Rachele</strong>, medico/guaritrice, sa che la muffa sta già causando sintomi</li>
+ 	<li><strong>Tomas</strong>, giovane padre, simbolo morale della comunità</li>
+</ul>
+Comunità esterna:
+<strong>La Cascina del Ponte</strong> – 18/20 membri, guidati da <strong>Serji, </strong>ex militare ucraino. Neutrali, disciplinati, meno ideologici di voi.
+<h3>ELEMENTI DA SPINGERE DURANTE TUTTO L’ARCO</h3>
+<ul>
+ 	<li>Fame = peggior nemico</li>
+ 	<li>Le relazioni cambiano più del numero di morti</li>
+ 	<li>Le conseguenze sono sociali, non solo fisiche</li>
+</ul>
+<h2>ATTO I – SCOPERTA DELLA CRISI (Sessione 1)</h2>
+<strong>Obiettivo</strong>
+
+Far emergere il problema e creare fratture interne.
+
+<strong>Apertura forte</strong>
+
+Qualcuno vomita sangue.
+Altri hanno febbre e tremori.
+
+Rachele scopre la muffa nel grano.
+
+<strong>Clock di pressione:</strong>
+<ul>
+ 	<li>Panico</li>
+ 	<li>Malattia</li>
+ 	<li>Perdita di fiducia nella gestione</li>
+</ul>
+<strong>Rivelazione centrale</strong>
+
+Marta sapeva da due settimane.
+
+Non è cattiva. Ha avuto paura.
+
+<strong>Scelte chiave:</strong>
+<ul>
+ 	<li>Punire Marta?</li>
+ 	<li>Tenerlo segreto?</li>
+ 	<li>Comunicare tutto alla comunità?</li>
+</ul>
+Chiunque venga messo al muro crea una fazione.
+
+Chi viene umiliato potrebbe fare qualcosa di stupido nel secondo atto.
+
+Chi viene protetto crea malcontento.
+
+Fine Atto:
+Calcolo freddo → <strong>Scorte reali = 6 settimane sane.</strong>
+
+Serve aiuto.
+<h3><strong>Scena 1 : Il primo sangue</strong></h3>
+<strong>Luogo:</strong> Mensa comune
+
+<strong>Obiettivo:</strong> Far sentire che la crisi è già iniziata.
+<strong>Pressione:</strong> Panico crescente.
+<strong>Può andare storto:</strong> qualcuno accusa Marta davanti a tutti → prima spaccatura pubblica.
+
+<strong>SCENA:</strong> Rumore di cucchiai sul metallo. Vapore che sale dalle ciotole. Fame silenziosa.
+
+Il ragazzo (Elia, 17 anni) tossisce.
+Una volta. Due.
+Poi si piega in avanti.
+
+Il sangue non è rosso vivo. È scuro, quasi marrone.
+
+Silenzio totale. Nessuno capisce subito.
+
+Poi l’odore ferroso arriva.
+
+<strong>Introduzione: </strong>
+
+<strong>“ </strong><em>4 dicembre.</em> <em>È passato qualche mese da quando avete fatto fuori i due lupi</em> <em>che giravano nella foresta, da lì tutto è proceduto in maniera insolitamente tranquilla, se non fosse che il raccolto non è stato particolarmente abbondante. </em><em>Siete a cena: la mensa è piena ma silenziosa. Non perché la gente non abbia nulla da dire. Ma perché quando il cibo è poco si parla meno. Si mangia. Il rumore dei cucchiai sulle ciotole di metallo sembra quasi ritmico e totalmente armonizzato con le esalazioni aromatiche del vapore caldo che sale dalla zuppa di grano. </em><em>Elia tossisce. All’inizio nessuno ci fa caso. Poi tossisce ancora, piegandosi in avanti. Al terzo colpo di tosse sputa sangue nella ciotola. Scuro. Denso. </em><em>Per un momento nessuno dice ancora nulla, tutti immersi nelle faccende proprie, quasi non se ne fossero acorti, quasi come ai vecchi tempi quando si stava bene, quasi come se quei pochi mesi di tranquillità potessero essere davvero l’inizio della fine delle preoccupazioni. Si sente solo il rumore della ciotola che scivola sul tavolo. </em><em>Solo Rachele si alza subito. «Elia, guardami.» Il ragazzo respira male. «Non riesco…» Un altro conato. Altro sangue.“</em>
+
+<strong>PNG in scena</strong>
+<ul>
+ 	<li><strong>Rachele</strong> si inginocchia immediatamente.</li>
+ 	<li><strong>Marta</strong> resta immobile due secondi di troppo.</li>
+ 	<li><strong>Ivo</strong> guarda prima la porta, non il ragazzo.</li>
+</ul>
+<strong>Cosa fai al tavolo</strong>
+
+Guarda un giocatore e chiedi:
+
+“Chi era seduto vicino a lui?”
+
+Guarda un altro:
+
+“Sei tu che lo tieni mentre vomita?”
+
+Coinvolgili fisicamente nella scena.
+
+<strong>Pressione immediata</strong>
+
+Rachele dice:
+
+“Non è influenza.”
+
+Qualcuno sussurra:
+“Il cibo.”
+
+Occhi verso Marta.
+
+Non serve che qualcuno la accusi apertamente.
+Basta uno sguardo.
+
+<strong>Può andare storto (spingi se vuoi)</strong>
+<ul>
+ 	<li>Un altro membro inizia a tossire.</li>
+ 	<li>Qualcuno rovescia la propria ciotola a terra.</li>
+ 	<li>Tomas prende la figlia e la porta via in fretta (nota questo dettaglio).</li>
+</ul>
+<strong>Chiudi la scena quando:</strong>
+
+Elia viene portato via.
+La mensa resta piena di ciotole mezze piene.
+Nessuno riprende a mangiare.
+
+Fai silenzio vero al tavolo.
+
+<strong>Chiusura della scena</strong>: “<em>Qualcuno lascia cadere il cucchiaio. «È il cibo.» La frase esce piano, quasi sussurrata. Ivo si alza di scatto. «State indietro.» Ma ormai tutti guardano Marta. </em><em>Lei non si muove. Rimase ferma con le mani appoggiate al tavolo. «Non può essere il grano» dice. </em><em>Dal fondo qualcuno risponde subito. «Allora perché vomita sangue?» Ormai tutti lasciano i piatti al loro destino e nella sala cala il silenzio. Ivo «mantenete la calma» poi si rivolge ai PG «direi che sia il caso di andare a verificare che non sia davvero il cibo»”</em>
+<h3><strong>Scena 2: Il silo</strong></h3>
+<strong>Luogo: Magazzino scorte. Freddo. Polvere nell’aria.</strong>
+
+<strong>Obiettivo:</strong> Rivelazione + tradimento di fiducia.
+<strong>Pressione:</strong> Fiducia nella leadership.
+<strong>Può andare storto:</strong> qualcuno propone di nascondere la verità.
+
+Rachele conferma: è tossica. Marta ammette che aveva notato qualcosa.
+
+<strong>Apertura</strong>
+
+Porta che si apre.
+Ispezione del grano. Odore dolciastro, Non fortissimo. Ma presente, muffa grigia tra i sacchi.
+
+Sacco aperto.
+Granelli più scuri. Zone umide.
+
+Rachele prende un pugno di grano. Lo annusa. Lo lascia cadere.
+
+“Questo non è solo umido.”
+
+<strong>Introduzione: </strong>
+
+“<em>Il silo puzza leggermente di dolce. Non è un odore forte. Ma quando lo sentite, non riuscite più a ignorarlo. Rachele affonda la mano in un sacco aperto. I chicchi sono più scuri del solito. Li porta al naso. Poi li lascia cadere. «Sanno di Muffa.» Ivo incrocia le braccia. «È solo umido.» Rachele scuote la testa. «No.». Poi, Silenzio. </em><em>Marta è appoggiata alla porta. «Avevo visto delle macchie» dice con lo sguardo verso il basso.”</em>
+
+<strong>Durante la scena:</strong>
+
+I personaggi dovrebbero indagare ma in caso entra in scena un PG es: “<em>Ivo  «Da quanto lo sai?»</em>
+
+<em>«Due settimane.» La stanza diventa improvvisamente più fredda. «Due settimane?» ripete Ivo. Marta alza lo sguardo. «Se lo dicevo subito cosa succedeva?» Nessuno rispose. «Panico» continuò lei. «E noi non avevamo ancora capito quanto fosse grave.» Rachele indica i sacchi. «Abbastanza grave, direi.»</em>
+
+Marta non è isterica. È stanca. Per noi intende la comunità intera e per grave il fatto che già ci sia troppo poco grano, ma lo dice in maniera non troppo convinta, se i personaggi indagano di più si lascia sfuggire che anche Tomas aveva controllato qualche sacco nell’altra fila, ma erano ok e lei non pensa abbia notato quelli umidi.<em> </em>
+
+Controllando una fila alla volta si nota che non è tutto contaminato. Ma abbastanza.
+
+<em>Ivo si china su una pila. «Strano.» qualcuno dice  «Cosa?» «È concentrato qui.» Rachele non risponde. Un piccolo sciame di ratti spunta (4 o 5 e si avvicina pericolosamente alle caviglie di Ivo mentre arretra)”</em>
+
+<strong>Dettaglio importante</strong>
+
+Non tutta la scorta è contaminata. Una sezione precisa del silo è peggiore.
+
+Se i PG controllano bene:
+<ul>
+ 	<li>I sacchi più colpiti sono in una fila interna.</li>
+ 	<li>Alcuni hanno il fondo leggermente più scuro (acqua assorbita).</li>
+</ul>
+Non enfatizzare troppo. È un seme.
+
+<strong>Domande da fare ai giocatori (dopo aver combattuto i ratti)</strong>
+<ul>
+ 	<li>“La difendi davanti agli altri o la metti sotto pressione?”</li>
+ 	<li>“Chi decide se testare tutta la scorta?”</li>
+ 	<li>“Bruciate subito i sacchi peggiori o aspettate?”</li>
+</ul>
+<strong>Può andare storto</strong>
+<ul>
+ 	<li>Ivo propone di chiudere il silo e non dire nulla finché non hanno dati certi.</li>
+ 	<li>Qualcuno dice: “Se lo sa la comunità, ci scanniamo.”</li>
+</ul>
+Qui nasce il primo vero bivio morale: <strong>trasparenza o controllo ed omissione della verità per ora?</strong>
+
+<strong>PLOT TWIST</strong>
+<ul>
+ 	<li>Alcuni sacchi sono più umidi di altri.</li>
+ 	<li>I sacchi contaminati sono concentrati in una sezione. Potrebbero essere stati contaminati anche dai ratti</li>
+ 	<li>Qualcuno ricorda Tomas nel silo giorni prima “per controllare”.</li>
+</ul>
+Non forzare la scoperta.
+Lascia che emerga se i PG scavano.
+
+<strong>NEMICI IN SCENA</strong>
+
+Sciame di ratti divoratori di graniglie, sono vicino ai sacchi nella fila centrale: LDO 4 Lesioni 2 Descrittore: <em>Siamo sporchi e pulciosi ma facimente scacciabili</em>
+
+<strong>Chiusura della Scena (TRASPARENZA): </strong>“<em>Dopo aver deciso di dire tutto alla comunità aprite la porta e vi dirigete alle vostre abitazioni, mentre Ivo prepara un cartello su un pezzo di carta e scrive a mano ASSEMBLEA GENERALE DELLA COMUNITÀ: 5 dicembre ore 20.00 – Cortile Principale”</em>
+
+<strong>Chiusura della Scena (OMISSIONE): </strong>“<em>Mentre state ancora parlando e decidete di non dire nulla, da fuori arriva un rumore forte. Ivo apre il portone, non pare esserci nessuno nelle vicinanze, poco più in là alcuni attrezzi sono caduti a terra, la strada è totalmente vuota, c’è solo un ragazzino in lontananza che rientra velocemente in casa e mentre chiude la porta si sente appena un piccolo urlo di rimprovero «Michael, che ci facevi fuori tu a quest’ora?»”</em>
+<h3><strong>Scena 3: Assemblea notturna</strong></h3>
+<strong>Luogo:</strong> cortile interno, braciere acceso, freddo che morde. La notizia è uscita. Non importa come. È uscita. La comunità è compatta fisicamente. Non emotivamente. La comunità vuole risposte.
+
+<strong>Obiettivo:</strong> Creare fazioni.
+<strong>Pressione:</strong> Leadership contestata.
+<strong>Può andare storto:</strong> richiesta di rimuovere Marta da “capo scorte”/mettere ai voti il capo/si va in rissa.
+
+<strong>Introduzione (Se deciso di dire tutto): </strong>“<em>La cena è appena terminata: Il cortile principale è ancora silenzioso. Il braciere illumina il cortile con una luce arancione instabile. La comunità è tutta lì. Tutti con le facce stanche, si aspettano che siate voi i primi a parlare e a spiegare cosa sta succedendo. Ivo prende la parola e dice: «Credo ci sia qualcosa che dovete sapere» e poi lascia a voi la parola”</em>
+
+<strong>Introduzione (Se scoperto da qualcuno): </strong>“<em>La cena sta per volgere al termine: la Sala Cena è silenziosa e spaventata, nonostante non ci sia la zuppa di grano stasera. Qualcuno prende la parola e dice: «Credo ci sia qualcosa che dovete dirci, o sbaglio?» e poi fissa i personaggi e coloro che erano nel silo. Michael abbassa lo sguardo, Tomas si irrigidisce. Ivo dice «Avete ragione. Vi diremo tutto nel Cortile Principale. Fra mezz’ora. Sistemiamo tutto e mandiamo a letto i bambini prima»””</em>
+
+<strong>Struttura della scena</strong>
+
+Non fare un monologo. Fai intervenire persone diverse. Domande che volano:
+<ul>
+ 	<li>“Da quanto lo sapevate?</li>
+ 	<li>“Chi controlla le scorte?”</li>
+ 	<li>“Chi decide ora?”</li>
+ 	<li>Chi è responsabile?</li>
+ 	<li>Quanto cibo resta?</li>
+</ul>
+<strong>Chiedi ai giocatori: </strong>“Chi prende la parola per primo?” Quello che dice definisce la direzione politica della comunità.
+
+<strong>PNG che incendiano la conversazione</strong>
+
+<strong>Rachele: </strong>“La gente sta già male.” <strong>Una madre: </strong>“Mio figlio ha mangiato quel grano.” <strong>Marta</strong> «Non sapevo che fosse tossico.» <strong>Qualcun’altro</strong> «Ma sapevi che c’era qualcosa!» <strong>un uomo rivolto ai personaggi</strong> “E voi? Da quanto lo sapete?”. Il mormorio cresce. <strong>Ivo</strong> «Basta. Serve ordine. Non discussione » <strong>Rachele</strong> «No. Devono sapere.» Tutti si voltano verso i pochi che avevano visto il silo. <strong>Un Vecchio</strong> «Quanto resta?» «Non abbastanza.» La frase cade come un peso.  <strong>Qualcuno urla</strong>: “Via Marta!” <strong>un altro.</strong> «E Poi? Chi prende il suo posto?» <strong>Tomas interviene dicendo:</strong> “Litigare non riempie le ciotole.” (Questo è un altro seme.) <strong>Jacob</strong>. “Neanche nascondere la verità.”  Si alza e lo prende per il bavero. La comunità è già divisa. E lo sanno tutti.
+
+<strong> Può andare storto</strong>
+<ul>
+ 	<li>Voto immediato sulla rimozione di Marta.</li>
+ 	<li>Richiesta di cambiare leadership.</li>
+</ul>
+<ul>
+ 	<li><strong>Jacob </strong>Pronto a litigare, ha un conto in sospeso sia con Tomas che con un PG. Qualcuno accusa il capo della Comunità di non essere più all’altezza e non essere in grado di vigilare e propone di destituirlo.</li>
+</ul>
+A seconda di come va l’assemblea possono esserci diverse opzioni:
+<ul>
+ 	<li><strong>Se la situazione degenera e si va alle mani</strong></li>
+</ul>
+<strong>AVVERSARIO: </strong>PNG AGGRESSIVO, <strong>JACOB</strong>- EX PUGILE EX CARCERATO
+
+Descrittore: Se le tue mosse sono prevedibili, colpirò duro. LDO: 4 - Lesioni: 2
+
+<em>Dono – Jab imparabile</em>: il Pugile è abituato a studiare l’avversario prima di colpire per danneggiarlo. Una volta per Scena può individuare il punto debole dell’avversario e colpire con forza, provocando 1 Lesione aggiuntiva.
+
+Due <strong>Sgherri</strong> di Jacob aggrediscono i PG, convinti che sapessero LDO 3 - 1 Lesione NESSUN DONO
+<ul>
+ 	<li><strong>Se la discussione porta alla richiesta di cambio di leadership/destituzione di Marta</strong></li>
+</ul>
+Si creano delle fazioni, qualcuno sta con il vecchio leader/Marta, qualcuno vuole Jacob, qualcuno i Personaggi (Solo se sono stati sinceri) o Ivo (in caso in cui non lo siano stati). I personaggi possono proporre alla comunità di votare subito un cambio di leadership o tergiversare, affiancando Marta nella gestione delle scorte, per il momento.
+
+<strong>Chiudi quando: </strong>Non c’è soluzione. Solo rabbia e paura.
+
+<strong>Chiusura della Scena </strong>“<em>Sedata la vostra platea furente, il leader dice: </em>«<em>Amici, compagni, capisco la vostra frustrazione, e non vi do torto. Ci sono state delle negligenze, ma ormai dobbiamo andare oltre. Non piangiamo sul latte versato. È il caso che qualcuno ricontrolli le scorte per bene. Poi decidermo il da farsi. Questa volta nessuno nasconderà nulla</em>.» <em>Nel dirlo guarda Marta, poi si gira verso i personaggi e dice «Ve ne occuperete voi, insieme ad Ivo, Tomas e… Jacob, visto che qualcuno qui si fida più di lui che di me a quanto pare. Stanotte tireremo le somme»</em>
+<h3><strong>Scena 4: Il calcolo</strong></h3>
+<strong>Luogo:</strong> Stanza chiusa, . Lampada a olio. Silenzio pesante. Solo PG +Ivo + Tomas + Jacob
+
+<strong>Obiettivo:</strong> Mettere davanti alla matematica, non alle emozioni.
+<strong>Pressione:</strong> Urgenza decisionale.
+<strong>Può andare storto:</strong> qualcuno propone già di sacrificare i più deboli.
+
+Sacco per sacco. Peso. Stima. Razione minima. Scrivilo davvero su carta. Fallo concreto.
+
+<strong>Risultato: </strong>6 settimane sicure. 8 tirate al limite. L’inverno previsto: 14. Non dire nulla dopo aver dato il numero. Lascia silenzio.
+
+<strong>Introduzione alla Scena</strong> “<em>La stanza che dà sul magazzino è piccola. Una lampada a olio illumina il tavolo. Il vento freddo sta facendo tremare i vetri con un rumore a dir poco sinistro. È notte fonda, quasi mattina”</em>
+
+<em>CHIEDERE AI GIOCATORI COME SI DIVIDONO I COMPITI, E DOPO UN PO’ AGGIUNGERE: “avete contato e pesato i sacchi uno per uno. Due volte. E per due volte avete ricalcolato anche le razioni.”</em>
+
+PRESENTAZIONE FOGLIETTO con Scritti dei dati: Sacchi buoni 11 da circa 80kg/cad circa+ 7 marci.
+
+<strong>Durante la scena:</strong>
+
+I PG dovrebbero discutere dei dati chiedendosi cosa significano:
+
+<em>Ivo dice «Ventitré persone.», Jacob aggiunge « Non dureremo più di sei settimane.» Silenzio. Ivo aggiunge «Otto se tiriamo e razioniamo meglio». Jacob incrocia le braccia «L’inverno dura almeno quattordici.» </em>Nessuno dice niente. Tomas abbassa alla testa e trasale in continuazione.
+
+A un certo punto della discussione Jacob dice quello che nessuno vuole sentire<em> «Qualcuno non arriverà alla fine. «Credo che scopriremo chi sono i più deboli.»» Jacob «I più vecchi e i bambini, sono inutili per la Comunità</em>» Ivo scuote la testa. Tomas trasale.  Jacob propone:<em> «Oppure facciamo un sorteggio, poi cacciamoli» Silenzio. </em>
+
+<strong>Poi MP deve fare questa domanda:</strong>
+
+“Chi non arriva alla fine?” Non “come sopravviviamo”. Ma “chi muore”.
+
+<strong>Può andare storto</strong>
+<ul>
+ 	<li>Qualcuno propone di tagliare subito le razioni ai più deboli.</li>
+ 	<li>Qualcuno propone di ridurre le razioni dei bambini.</li>
+ 	<li>Qualcuno propone di cercare aiuto esterno.</li>
+ 	<li>Tomas non si espone, non vuole essere lì, trasale spesso, è agitato. (altri semi per il plot twist)</li>
+</ul>
+Se nessuno lo dice, fallo dire a Ivo:
+
+“C’è la Cascina del Ponte.”
+
+Prima volta che viene nominata.
+
+<strong>Chiusura della Scena</strong>
+
+<em>La discussione va avanti per ore, a un certo punto Tomas trasale per l’ennesima volta e dice timidamente “ci deve essere un’altra soluzione”, la voce trema e sembra avere veramente paura mentre lo dice.  Ivo guarda il tavolo. «C’è la Cascina del Ponte.» Il leader dice: «Ormai è quasi mattina, andiamo a dormire e ragioniamoci su. </em>Abbiamo sei settimane per decidere chi siamo.<em>»</em>
+<h3>Chiusura Atto I</h3>
+Non chiudere con una decisione.
+
+Chiudi con questa frase, detta da qualcuno:
+
+“Abbiamo sei settimane per decidere chi siamo.”
+
+Stop.
+
+Fine atto: decisione di contattare la Cascina.
+<h2>ATTO II – IL PATTO (Sessione 2)</h2>
+I PG vanno alla Cascina del Ponte.
+
+Serji è diretto:
+
+“Vi diamo viveri per superare l’inverno.
+In cambio vogliamo una persona. Permanente.
+Giovane. Sana. Non negoziabile.”
+
+Non è schiavismo dichiarato.
+Ma è chiaramente acquisizione di forza lavoro.
+
+<strong>Serji è pragmatico, non crudele.</strong>
+
+Se provocato, però, reagisce duramente.
+
+<strong>Opzioni reali</strong>
+
+<strong>1) Accettare e consegnare qualcuno</strong>
+<ul>
+ 	<li>La comunità sopravvive.</li>
+ 	<li>Si crea trauma permanente.</li>
+ 	<li>Chi viene scelto? Volontario? Sorteggio? Imposto?</li>
+</ul>
+Conseguenza:
+La comunità non sarà più la stessa.
+
+<strong>2) Fingere di accettare e tradire</strong>
+<ul>
+ 	<li>Attacco notturno</li>
+ 	<li>Fuga con scorte</li>
+ 	<li>Rapimento inverso</li>
+</ul>
+Conseguenza:
+<ul>
+ 	<li>Guerra latente</li>
+ 	<li>Rischio inseguimento nel terzo atto</li>
+</ul>
+<strong>3) Rifiutare e saccheggiare apertamente</strong>
+<ul>
+ 	<li>Conflitto diretto</li>
+ 	<li>Perdite immediate</li>
+</ul>
+Conseguenza:
+<ul>
+ 	<li>Sopravvivenza incerta</li>
+ 	<li>Nemico dichiarato</li>
+</ul>
+<strong>4) Rifiutare e razionare</strong>
+<ul>
+ 	<li>Si torna a casa.</li>
+ 	<li>Razioni drastiche.</li>
+ 	<li>2–4 membri moriranno sicuramente.</li>
+</ul>
+Chi muore? I deboli? Sorteggio? Lasciati indietro?
+
+Fine Atto II:
+Qualunque scelta genera:
+<ul>
+ 	<li>Morti</li>
+ 	<li>Fratture</li>
+ 	<li>Nemici</li>
+ 	<li>Senso di colpa</li>
+</ul>
+<h3><strong>IL PATTO </strong><strong>SCENA PREQUEL – LA STRADA DEL NON RITORNO </strong></h3>
+<strong>Luogo:</strong> <em>Alcuni giorni dopo la prima assemblea notturna. Siete all’erta e piuttosto tesi, ai margini della strada sterrata che divide i vostri due piccoli appezzamenti e che prosegue poi fino allo scollinamento che porta giù fino alla Cascina del Ponte, i campi di cui avete preso possesso e che avete coltivato nel corso dell’ultimo anno sembrano quasi morti, in questa fredda mattina di dicembre. La proposta della Cascina vi aveva zittito, ma la Comunità, con vostra parziale sorpresa, ha deciso di fare quello che non vi sareste aspettati dopotutto. Ora state per compiere il volere di tutti, beh per lo meno della maggioranza. </em><em>Il vento muove l’erba secca. Non si sente altro. Poi un rumore. Un trascinarsi. </em><em>2 Erranti emergono dal campo. Uno ha la mandibola spezzata. L’altro trascina una gamba. Poi un terzo si alza dietro un muretto: Un Urlatore. Se apre la bocca e urla, ne arriveranno altri.</em>
+
+<strong>COSA SANNO I PG: </strong>
+
+Vi è stata fatta un’offerta drastica, potreste avere parte delle loro scorte ma ad un prezzo molto alto, la vostra Comunità potrebbe uscirne molto provata fisicamente ed emotivamente ma ormai ha preso una decisione
+
+<strong>Domande per i PG:</strong>
+<ul>
+ 	<li>Siete soli o c’è qualche PNG con Voi? Nel caso uno dice “Che cazzo sta succedendo? Da dove arrivano tutti questi Risvegliati?”</li>
+ 	<li>Per ora i Risvegliati potrebbero non avervi ancora visto che fate?</li>
+</ul>
+DURANTE LO SCONTRO
+Se l’urlatore grida: <em>Un grido lungo, disumano. Nel campo si muove qualcosa.</em>
+
+<em>Altri due Erranti stanno arrivando.</em>
+
+<strong>Chiusura della Scena:  “</strong><em>Quando tutto finisce. Silenzio. Respiri affannosi. Poi una voce dietro di uno dei PG. <strong>Tomas. </strong>«Ho deciso che dovevo venire da voi. Devo dirvi una cosa» Se ci sono PNG non vuole farsi sentire, si fida solo dei PG.”</em>
+
+<strong>AVVERSARI</strong>
+
+1 ERRANTE e 1 URLATORE
+<h3><strong>Scena 1: Arrivo alla Cascina</strong></h3>
+<strong>Luogo:</strong> Cancello chiuso, uomini armati sopra il fienile Nessuna ostilità, ma nessuna accoglienza calda.
+
+Serji li riceve seduto, non si alza.
+
+<strong>Obiettivo:</strong> Far capire che loro sono in posizione di debolezza.
+<strong>Pressione:</strong> Orgoglio vs bisogno.
+<strong>Può andare storto:</strong> uno dei PG si mostra aggressivo → trattativa più dura.
+
+<strong>Introduzione alla Scena: “</strong><em>Due giorni prima. Circa mezzogiorno Il cancello della Cascina è chiuso. Due uomini armati osservano dal fienile. Non puntano ancora le armi contro di voi, ma sono pronti a farlo. Dopo un cenno di saluto veloce e dopo avervi scrutato, vi chiedono le vostre intenzioni”</em>
+
+<strong>COSA SANNO I PG:</strong>
+<ul>
+ 	<li>La Cascina del ponte è una comunità neutrale, né amica né nemica. Non vogliono rotture di palle. Si sono sempre detti pronti ad aiutarli ma solo in caso di emergenza. E tutto ha un prezzo. Alto</li>
+ 	<li>Il Capo è Serji. Un uomo grosso, muscoloso che ha sempre in bocca un sigaro ma non lo fuma mai. È per darsi un tono e dimostrare che è un duro.</li>
+ 	<li>C’è una piccola “milizia” di 7/8 fidati di Serji, sono apparentemente dei duri ben armati, non li avete mai visti minacciare o trattare male qualcuno della loro comunità.</li>
+ 	<li>Per il resto ci sono un'altra quindicina di abitanti, che lavorano e non imbracciano le armi. La gente all’interno della comunità parla poco e non si capisce se è contenta o meno della leadership.</li>
+</ul>
+<strong> </strong><strong>Durante la Scena: </strong>
+
+Inizialmente i Guardiani non vi fanno passare, tergiversano, Serji sta gestendo la comunità, controlla lo stoccaggio delle risorse, sta organizzando i turni, eccetera. Dopo qualche chiacchiera arriva Serji.
+
+OBIETTIVO DEI GIOCATORI: Farsi aprire e parlare con Serji
+
+Domande da fare:
+<ul>
+ 	<li>Siete solo voi? Siete Armati?</li>
+ 	<li>Lasciate le armi nella guardiola come al solito ve le renderemo poi (se non lasciano tutto vengono beccati e si rischia di degenerare)</li>
+ 	<li>Perché volete parlare con Serji (Se mentono o non lo dicono si rischia di degenerare)</li>
+</ul>
+Se qualcuno cerca di aggirare le mura per trovare altri ingressi viene subito fermato da un tizio con una balestra “<em>Fai un altro passo e ti stendo!</em>”
+
+Non appena riescono a entrare: “<em>Un barattolo sul filo tintinna. Un Errante sta trascinandosi verso il recinto. Le guardie lo ignorano. «Succede spesso.»”</em> Se i PG reagiscono male → la Cascina li considera nervosi e deboli.
+
+Appena dentro vengono invitati ad aspettare sotto il portico di ingresso
+
+<em>SE SI DEGENERA E SI VA A LITIGARE </em>(RICORDARE CHE I PG SONO DISARMATI)
+
+<strong>Avversario - Soldati della Città (4)</strong>
+
+Uomini fedeli a Serji e alla Cascina del Ponte, mantengono lontani gli scocciatori con pugno di ferro e lunghi fucili.
+
+<strong>Descrittore</strong>: La disciplina e la fede in Serji sono la nostra forza, non arretriamo di fronte al pericolo.
+
+LDO: 5 Lesioni: 5 (1 per ciascun soldato, 2 Stanislao)
+
+<strong>Dono - Accerchiare</strong>: i soldati sono abituati a lavorare in squadra e a mantenere l’ordine. Ogni tre soldati presenti si aggiunge un Dado di Svantaggio al loro bersaglio e non possono essere presi alla sprovvista di giorno.
+
+<strong>Stanislao. </strong>La guardia che fa le domande ai PG. Il più fedele fra tutti
+
+<strong>Descrittore</strong>: Non lascerò mai il fianco di Serji e sono pronto a morire per lui (SOLO SE ISOLATO – PER CONVINCERLO AD APRIRE PRIMA CHE ARRIVI SERJI)
+
+LDO: 4 Lesioni: 2
+
+<strong>Chiusura della Scena</strong>: <strong>“</strong><em>Un cane abbaia. Uno dei guardiani parla. «Fermatevi lì.» Dopo qualche minuto compare Serji. Si siede su una sedia davanti al cancello. Non si alza. «Avete fatto strada. Avete un problema.» Non è una domanda. «Il vostro grano è andato, vero?»” </em>
+<h3><strong>Scena 2: L’offerta</strong></h3>
+Serji è diretto:
+
+“Una persona. Sana. Permanente.” Nessuna vergogna nel dirlo.
+
+<strong>Obiettivo:</strong> Mettere il coltello sul tavolo.
+<strong>Pressione:</strong> Morale collettiva.
+<strong>Può andare storto:</strong> la Cascina nomina un nome specifico (es. Tomas).
+
+<strong>Introduzione alla Scena: “</strong><em>Serji prende una fiaschetta. Beve. Poi parla. «Possiamo aiutarvi.» Silenzio. «Abbiamo scorte. Posso mostrarvele e poi mi direte voi… Siete miei ospiti per ora…» Poi si rivolge a Stanislao “Potresti fargli fare un giro e poi riportarli da me””</em>
+
+I PG possono scegliere di andare con Stanislao, mentre Serji si cambia, o insistere perché non c’è tempo.  Nel caso Serji è infastidito leggermente dalla cosa.
+
+Se vanno notano che all’interno del campo ci sono una decina di galline rinchiuse, 3 capre, 2 vacche e 1 toro (tante per una comunità così piccola), sacchi di frutta ben conservati, due bambini che osservano da lontano. Questo rende chiaro che qui si mangia ancora bene. Ma la gente non sembra cmq totalmente felice come dovrebbe.
+
+Da una casa non troppo distante da quella di Serji si sentono dei rumori strani, i PG non riescono a capire di cosa si tratta (potrebbe essere qualche lavoro pesante o peggio un Risvegliato pericoloso catturato).
+
+È la prima volta che visitano a fondo la Cascina del Ponte, finora hanno sempre trattato qualche piccolo scambio nella stanza all’ingresso dove c’è Serji.
+
+<strong>Pressione </strong>Serji non è ostile. Ma è chiaramente <strong>in posizione di forza</strong>. Parla lentamente. Non offre nulla gratuitamente.
+
+<strong>SPUNTI DIALOGO</strong>
+
+<em>Uno dei visitatori annuisce. «Il grano è andato.» Serji fa un piccolo sorriso stanco. «Capita.» Silenzio. «Possiamo aiutarvi» disse. «Come.» </em>
+
+<em>Serji si sporge in avanti. «Vi diamo abbastanza viveri per passare l’inverno.» Pausa. «In cambio vogliamo una persona. Giovane. Sana. Permanente.» </em>
+
+<em>Serji si appoggia allo schienale. «Non vi sto rubando niente.» </em>Se un /PG PNG della comunità, se se lo sono portati dietro può aggiungere «Lo stai comprando».<em> Serji scrolla le spalle. «Chiamalo come vuoi.»”</em>
+
+<strong>Se i PG sono aggressivi </strong>Gli scagnozzi si irrigidiscono. I guardiani sopra il fienile alzano le armi. Serji dice: «Se volete litigare potete farlo da un’altra parte.» Poi aggiunge: «Io sto offrendo un affare.»
+
+<strong>Se i PG restano calmi </strong>Serji annuisce. «Allora parliamo.»
+
+<strong>Reazioni dei PG e come gestirle</strong>
+
+<strong>1 – Shock </strong>PG: «È schiavitù.» Serji: «No.» «È sopravvivenza.»
+
+<strong>2 – Rabbia</strong> Se qualcuno minaccia Serji: Le guardie alzano le armi. Serji dice freddo: «Se pensate di prendere il cibo con la forza… provate.»
+
+<strong>3 – Negoziazione </strong>PG: «Due persone per un inverno?» Serji scuote la testa. «Una.»
+
+<strong>Possibile complicazione </strong>Se vuoi aumentare la tensione. Serji dice: «E deve essere qualcuno utile.» Pausa. «Tipo Rachele.».
+
+<strong>Risposte possibili di Serji alle obiezioni</strong>
+
+Non sono schiavi. Sono braccia. (Questo fa capire la filosofia della Cascina.)
+
+I PG possono cercare di negoziare: offrire attrezzi, armi, lavoro stagionale Serji risponde: «Le cose si rompono.» «Le persone lavorano.»
+
+Se i PG esitano troppo: Serji dice: «Non siete gli unici ad avere fame.»
+
+Durante la discussione: Si sentono colpi sul cancello. Un Errante si è incastrato tra le sbarre. Una guardia lo finisce con una lancia. Nessuno interrompe la trattativa. Questo mostra quanto siano abituati alla morte.
+
+<strong>NEMICI IN SCENA</strong>
+
+<strong>Soldati della Città (3): </strong>Stanislao +2 (Vedi sopra) – Se si va alle mani, dopo il primo scambio ne arrivano altri 5 (RICORDARE CHE I PG SONO DISARMATI)
+
+<strong>Serji. </strong>Il capo della Comunità, è un duro ex militare incorruttibile e molto rigido. Guida con pugno di ferro ma a suo modo si ritiene corretto e onesto.
+
+<strong>Descrittore</strong>: Sono un duro e le mie scelte sono irremovibili, non provare ad essere aggressivo con me o entrerai nella mia lista nera ma se mi dimostri fedeltà ricambierò lottando con forza anche per te. LDO: 6 Lesioni: 3
+
+<strong>Dono – Prova di forza</strong>: Se provi a importi con aggressività contro di lui devi svolgere un Check di Presenza con un Dado Svantaggio. Se vinci il Check ottieni ciò che vuoi ma perdi la sua alleanza. In ogni caso non puoi più trattare con lui per il resto della Sessione.
+
+<strong>Dono – Gradito Alleato: </strong>Una volta per Crisi, se sei alleato con Serji e chiedi l’aiuto della sua Comunità per una Minaccia (Nemici umani o Risvegliati), si presenterà sul campo di battaglia insieme ad alcuni suoi fidati dando al gruppo 1 dado di vantaggio a ciascun PG per 2 scambi.
+
+<strong>Chiusura della Scena (non si è degenerato nella violenza)</strong>: <strong>“ </strong>Serji si alza dalla sedia, non ha più voglia né tempo per continuare questa conversazione e vi congeda dicendo <em>«Vi ho fatto la mia offerta. Ora sta a voi decidere. Attenderò la vostra risposta entro un paio di giorni, in caso contrario considererò il vostro silenzio come un rifiuto. Sono certo che nel caso avrete sicuramente trovato una soluzione alternativa». Sogghigna mentre chiude la frase e poi aggiunge «Nel frattempo, per mostrarvi la mia buona fede potete prendere questo piccolo regalo per voi» e vi porge un sacco con una trentina di mele e qualche litro di latte. Venite a questo punto invitati dai soldati a tornare alla vostra comunità e a decidere alla svelta, a Serji non piace aspettare.” </em>
+
+<strong>Chiusura della Scena (si è degenerato nella violenza)</strong>: Dopo un paio di round di combattimento, appena almeno 2 degli scagnozzi sono stati messi a terra
+
+<strong>“</strong><em>Un boato si propaga nell’aria, Serji guarda all’esterno, un Atlas, ha scardinato la porta della casa accanto ed ora è sull’uscio pronto a lanciarsi all’attacco…  Serji dice «E quello come cazzo ha fatto a liberarsi? Dragos vai a chiamare il Provectus, deve calmarlo… subito!». capite immediatamente che in qualche modo la Cascina del Ponte lo teneva nascosto lì e che anche loro hanno qualcuno di simile alla vostra vecchia amica Kisha… Serji poi si rivolge a voi «Quanto a voi.. toglietevi dai coglioni, per il vostro meglio. Vi ho fatto la mia offerta. Ora sta a voi decidere. Attenderò la vostra risposta entro un paio di giorni, in caso contrario considererò il vostro silenzio come un rifiuto» Venite brutalmente buttati fuori dai cancelli e vi conviene andarvene prima che altri risvegliati arrivino…”</em>
+<h3><strong>Scena 3: Ritorno e voto</strong></h3>
+<strong>Luogo:</strong> Comunità divisa Devono raccontare la proposta. Reazioni: “È schiavitù.” “È sopravvivenza.” “Meglio uno che tutti.” <strong>Obiettivo:</strong> Esplodere la tensione interna. <strong>Pressione:</strong> Colpa condivisa.
+<strong>Può andare storto:</strong> qualcuno si offre volontario → destabilizza tutto.
+<h4><strong>PARTE 1 </strong></h4>
+<strong>Introduzione alla Scena: “</strong><em>È passata circa mezz’ora da quando avete lasciato la Cascina del Ponte, state percorrendo la strada che costeggia parzialmente il bosco prima di inoltrarvisi all’interno poco più avanti e discutete fra di voi della proposta e di cosa dire alla Comunità al vostro arrivo”</em>
+
+I giocatori in questa fase dovrebbero concordare su come comportarsi con gli altri e cosa proporre alla Comunità come soluzione.  Proprio mentre discutono sentono immenso urlo arrivare da dietro di loro e davanti a loro un gruppo di Erranti sbuca dalla foresta, richiamati dall’urlo a valle.
+
+Un numero pari ai PG si rivolgono verso i PG stessi. Fra loro c’è anche un Implacabile che punta verso uno di loro (chi ha guida la compagnia oppure decide MP). <strong>Prima attaccano i nemici</strong> 3 Erranti vs 1 e 1 Implacabile vs 1. Dopo il primo danno all’implacabile arriva un altro Urlo e l’implacabile corre verso la Cascina del Ponte. Gli erranti restano a combattere fino alla morte.  <strong>SE PROVANO A FUGGIRE</strong> dagli Erranti con un tiro di Reazione con LDO+1 (5) e svantaggio. Se più di uno fallisce allora la fuga non riesce. Chi fallisce/ha successo con costo/ l’ultimo della fila viene comunque “infettato dall’implacabile”
+
+<strong>Sconfitti gli Erranti “</strong><em>Guardando la strada da dove siete arrivati notate che una quindicina fra Erranti e Blitzer e l’Implacabile appena incontrato da voi sono in prossimità delle mura della Cascina del Ponte, si sentono numerosi spari ma l’urlo tremendo dell’Urlatore non si sente più. Probabilmente sono riusciti a toglierlo di mezzo. Per voi è tempo di tornare a casa”</em>
+
+<strong>AVVERSARI</strong>
+
+<strong>ERRANTI (n = PG-1) – </strong>Vedi statistiche della scena prequel
+
+<strong>IMPLACABILE (1) - </strong>Descrittore: <em>Guido le orde verso nuove prede. </em>LDO 6 Lesioni: 3
+
+<strong>Dono - Implacabile: </strong>se un Risvegliato di questa categoria colpisce un bersaglio, può seguirlo senza sosta all’interno della Regione. In queste condizioni, un Implacabile può essere usato dal MP come minaccia imprevista in ogni Scena successiva. Attraversare larghi specchi d’acqua o muoversi su mezzi molto veloci può far perdere le tracce al Risvegliato per alcune Scene, ma prima o poi l’Implacabile ritroverà la sua pista.
+
+<strong>Dono - Comando: </strong>un Implacabile può dare indicazioni a Erranti, Urlatori, Untori e Rigonfi. Il comando avviene attraverso variazioni feromoniche nell’aria. Gli Implacabili si limitano, in genere, a dare indicazioni sulla posizione del nemico o su dove appostarsi per tendere un agguato.
+
+<strong>Dono - Fusione: </strong>quando un Implacabile sta per soccombere, che sia perché gli rimane una Lesione o perché l’Orda che comanda sta per essere distrutta, inizia a diffondere tutti i feromoni di cui dispone richiamando la Chimera più vicina. Questa creatura sopraggiunge nell’arco di un paio di Scambi e inizia un processo di fusione con l’Implacabile. Come risultato di questa mostruosa fusione il Risvegliato rigenera subito 2 Lesioni e acquisisce uno dei Doni della Chimera.
+<h4><strong>PARTE 2 La riunione con la Comunità</strong></h4>
+<strong>Introduzione: </strong>“<em>Al vostro arrivo è già sera</em><strong>. </strong><em>Un folto comitato di benvenuto vi sta già aspettando dentro i cancelli della vostra Comunità, radunata al completo nel cortile. Il vento fa tremare il braciere. Le persone sono già agitate. Qualcuno chiede subito: «Che hanno detto?» Un altro: «Avete portato cibo?»”</em>
+
+Ora i Personaggi illustrano tutto.
+
+<strong>PNG principali: Ivo</strong> – favorevole alla soluzione pragmatica <strong>Rachele</strong> – morale e compassione <strong>Marta</strong> – sotto accusa dal primo atto <strong>Tomas</strong> – se la verità emerge
+
+<strong>Dialoghi della comunità</strong>
+
+<strong>Donna: </strong>«Una persona?!» <strong>Uomo: </strong>«È schiavitù.» <strong>Ivo: </strong>«È sopravvivenza.»
+
+<strong>Vecchio: </strong>«Meglio uno che tutti.» <strong>Madre: </strong>«Non mio figlio.» <strong>INNESCA CONFLITTO</strong> <strong>1️</strong><strong>⃣</strong>
+
+<strong>Conflitti da introdurre mentre i personaggi spiegano le proprie ragioni</strong>
+
+<strong>1️</strong><strong>⃣</strong><strong> Conflitto fisico </strong>Due membri della comunità quasi si picchiano. Uno dice: «Diamo i vecchi.» Un vecchio lo colpisce con un bastone. Jacob aggredisce qualcuno strattonandolo (Possibile lotta- Tiro su Corpo-, vedi primo atto per statistiche, o mediazione dei PG, Tiro su Presenza)
+
+<strong>2️</strong><strong>⃣ </strong><strong>Conflitto politico/morale </strong>Qualcuno propone: «Facciamo votare.» Questo crea <strong>3 fazioni immediate</strong>: Chi incolpa Marta È colpa sua!» Ivo: «Allora abbiamo già il candidato.», chi dice ancora di mettere i nomi dei vecchi e scegliere fra loro, chi dice «Non è una scelta accettabile, mandiamoli a fanculo e rimbocchiamoci le maniche razioniamo e proviamo a sopravvivere così, esploriamo altrove per cercare altro cibo: verdure, pesce qualcosa lo troveremo»
+
+<strong>3️</strong><strong>⃣</strong><strong> Minaccia esterna </strong>Mentre si discute: Un urlo lontano. Gli Erranti si stanno muovendo verso il villaggio. Questo obbliga qualcuno a lasciare l’assemblea per la guardia. La tensione resta sospesa.
+
+Qualcuno suggerisce di fingere di consegnare qualcuno e poi attaccarli per rubare tutto «<em>Tanto siamo più del doppio di loro</em>», qualcun altro dice di non fingere nemmeno, semplicemente andare di notte e saccheggiare tutto «<em>Tanto avete visto dove tengono la roba no? Li dobbiamo ammazzare quei bastardi e liberare quei poveracci che schiavizzano.</em>»
+
+<strong>4️</strong><strong>⃣</strong> Se non lo fanno i PG il Capo della comunità tira le fila delle opzioni: <strong>Consegna di qualcuno, Finta consegna e Tradimento della Cascina del Ponte, Saccheggio, Rifiuto della proposta e isolamento</strong>
+
+Dopo questa mini scena è<strong> Il momento della scelta </strong>Alla fine qualcuno chiede ai PG e al capo della comunità: «Allora?» «Che facciamo?» E la comunità aspetta.
+<h4><strong>Chiusura della Scena (CONSEGNA</strong> <strong>- Vera o finta)</strong></h4>
+Si lanciano 2 D6 – il Risultato più basso determina il PNG legame che viene votato dalla Comunità, se non scelta Marta o Volontario.
+
+“<em>Al termine della votazione, il freddo sembra essersi fatto ancora più pungente e fastidioso e penetrante. Il vostro capo della Comunità dice: «Molto bene, l’assemblea ha scelto democraticamente» e poi, rivolto al prescelto e ai personaggi dice «Mi spiace molto che siamo dovuti arrivare a tanto. Sono molto rammaricato ma… cominciate a preparare le vostre cose, domattina partirete presto in direzione della Cascina del Ponte.». In un’aria lugubre e tesa si chiude l’assemblea, con qualcuno che piange, altri che imprecano, qualcuno ancora si lamenta debolmente perché non è convinto che questa scelta sia quella giusta. Tutti però sono costretti a tornare mestamente alle loro abitazioni, tremanti non si capisce bene se per il freddo, la rabbia, lo sconforto o quant’altro. O forse per tutte queste emozioni messe assieme”</em>
+
+<strong>Chiusura della Scena (SACCHEGGIO E DISTRUZIONE O ISOLAMENTO</strong>): “<em>La scelta presa, come un pugno allo stomaco di ciascuno dei membri della vostra Comunità, inclusi voi stessi sembra aver reso il freddo ancora più pungente e fastidioso, quasi come se le vostre ossa non potessero più reggerlo. Il vostro capo della Comunità dice: «Va bene, e così sia. Non mi sarei mai aspettato saremmo arrivati a questo punto, ma a quanto pare non c‘è altra scelta» e poi, rivolto al prescelto e ai personaggi dice «Mi spiace molto che siamo dovuti arrivare a tanto. Sono molto rammaricato ma… cominciamo a prepararci, ci aspettano sicuramente dei tempi duri, questo inverno dovremo di certo vendere cara la pelle… di nuovo…». In un’aria lugubre e tesa si chiude l’assemblea, con qualcuno che piange, altri che imprecano, qualcuno ancora si lamenta debolmente perché non è convinto che questa scelta sia quella giusta. Tutti però sono costretti a tornare mestamente alle loro abitazioni, tremanti non si capisce bene se per il freddo, la rabbia, lo sconforto o quant’altro. O forse per tutte queste emozioni messe assieme”</em>
+<h3><strong>Scena 4: La scelta eseguita</strong></h3>
+Questa scena cambia in base alla decisione:
+<ul>
+ 	<li><strong>Consegna:</strong> scena intima d’addio al cancello. <strong>SCENA 4A</strong></li>
+ 	<li><strong>Tradimento:</strong> preparazione notturna, silenzi, armi. <strong>SCENA 4A + 4B </strong></li>
+ 	<li><strong>Saccheggio e distruzione della CDP:</strong> primo sparo, caos. <strong>SCENA 4C</strong></li>
+ 	<li><strong>Rifiuto e ritorno:</strong> chiudere il cancello sapendo cosa avete scelto. <strong>SCENA 4D</strong></li>
+</ul>
+<strong>Obiettivo:</strong> Rendere irreversibile la scelta. <strong>Pressione:</strong> Nessun ritorno indietro. <strong>Può andare storto:</strong> morte improvvisa già qui. Questa è una <strong>scena diversa per ogni scelta</strong>.
+<h4><strong>PARTE 1 La confessione </strong></h4>
+“<em>Siete all’esterno, avete appena ucciso il piccolo manipolo di Risvegliati che è spuntato dai campi e Tomas vi ha detto che doveva parlarvi</em> <em>«Non è stato un incidente.» Silenzio. «Ho bagnato io alcuni sacchi.»</em> UNO DEI PG PUÒ REAGIRE<em>. Tomas continua: «Non tutti. Solo abbastanza.» «Avevo fatto i conti.» «Non bastava comunque.» Pausa. «Se aspettavamo l’inverno pieno, non avevamo più nessuna scelta.» </em>
+
+COME REAGISCONO I PERSONAGGI? Possono aggredirlo verbalmente, cercare di convincerlo a offrirsi volontario al posto di chi è stato scelto (se hanno scelto di accettare la proposta di Serji), decidere di consegnarlo contro il volere della comunità ribaltando la scelta, non dire nulla per ora e/o “rimandare la scelta” a dopo i fatti della scena 4, alla fine del secondo atto o nel terzo atto.
+
+Se qualcuno dice che è ci sono stati dei morti per colpa sua: <em>Tomas annuisce. «Lo so.» «Pensavo…» Non finisce la frase.</em>
+
+<strong>Reazioni possibili dei PG </strong>
+
+Il MP chiede ai PG: cosa provano i loro personaggi? cosa vogliono fare di Tomas? ne parlano lungo la strada portandoselo dietro o lo rimandano dentro la Comunità? Lo scortano dentro o lo mandano da solo?
+
+<strong>1 – Rabbia immediata </strong>Se minacciano Tomas: Tomas non scappa. Dice solo: «Fate quello che dovete.»
+
+<strong>2 – Segreto </strong>Se decidono di tenerlo nascosto: Tomas dice: «Non lo faccio per me.» «Lo faccio per mia figlia.»
+
+<strong>3 – Consegnarlo alla Cascina</strong> Tomas rimane in silenzio. Poi dice: «Allora almeno servirà a qualcosa. MA vi prego prendetevi cura di mia figlia. Vi chiedo solo questo»
+
+SE NON SCELGONO CONSEGNA O TRADIMENTO I PERSONAGGI TORNANO ALL’INTERNO
+<h4><strong>INTERMEZZO SU TOMAS (da giocare quando coerente)</strong></h4>
+<strong>Se i PG rivelano la verità su Tomas subito o a fine Sessione (in caso non volessero farlo Tomas confesserà tutto dopo averli visti tornare a casa nella scena 4D) e Tomas non è alla Cascina del Ponte “</strong><em>Ivo Esplode subito. «È stato lui?!» «Ha avvelenato il grano!» «Allora la decisione è semplice.» Gli sguardi increduli della comunità sono tutti verso Tomas. Qualcuno è sbigottito e qualcuno lo aggredisce verbalmente «Bastardo. Ci hai costretto a fare una scelta tremenda! È tutta colpa tua, sei un cazzo di idiota!»”</em>
+
+A questo punto i Personaggi devono decidere il destino di Tomas insieme alla comunità: Bandirlo, ucciderlo, mandarlo alla Cascina del Ponte (se non l’hanno distrutta) o perdonarlo.
+
+<strong>Se i PG rivelano la verità su Tomas a fine Sessione e Tomas è alla Cascina del Ponte. (OBBLIGO SE LO CONSEGNANO CONTRO LA DECISIONE DELLA COMUNITA’) “</strong><em>La gente è indignata qualcuno grida: «Che bastardo. Ci ha costretto a fare una scelta tremenda! È tutta colpa di quel cazzo di idiota! E ora non sappiamo nemmeno se riusciremo a superare l’inverno per colpa sua e della sua amichetta Marta… che stronzi!», gli animi sono sempre più infervorati ma il Capo della Comunità interviene «State zitti tutti ora! Ormai non c’è altro da fare che provare a sopravvivere convivendo con le nostre scelte. Tomas è alla Cascina del Ponte, noi perseguiremo sulla nostra via e faremo in modo di sopravvivere. E ora rimettiamoci al lavoro se vogliamo davvero rimanere vivi tutti»”</em>
+<h3><strong>SCENA 4 A – CONSEGNA</strong></h3>
+In questo caso l’atto si chiude molto rapidamente. I personaggi possono salutare il prescelto: Il MP informa che sono quasi arrivati e che se vogliono hanno ancora 4 minuti per farlo o dirsi le ultime cose fra loro. Poi fa partire un timer al termine del quale si chiude la scena.
+
+<strong>Chiusura della scena: “</strong><em>Dopo aver discusso cosa fare di Tomas, giungete dopo alcune ore nuovamente davanti al cancello della Cascina. L’aria è gelida, la giorna ta grigia e nuvolosa e il vento che ulula accompagna questo momento in una maniera che rende ancora più tetra la decisione che avete preso il giorno precedente. La persona scelta è davanti al cancello. Serji la guarda. «Cammina.» poi guarda voi con un cenno severo e vi dice «Onoreremo il nostro patto. Domani sera vi raggiungeremo con un carico di provviste». Il cancello si chiude. Non vi resta che tornare a casa. Il viaggio di ritorno procede nel silenzio e stranamente senza intoppi né risvegliati fra i piedi. Quando arrivate è ormai sera tarda, le stelle nel cielo sono poche e il freddo nelle ossa è tanto, questa volta il cortile è deserto, come se nessuno avesse il coraggio di convivere con quello che avete scelto di fare. E l’inverno è solo all’inizio”</em>
+<h3><strong>4B – TRADIMENTO</strong></h3>
+<strong>Introduzione alla scena “</strong><em>Circa due giorni dopo aver lasciato il prescelto come esca all’interno della Cascina del Ponte vi trovate con gran parte della Comunità appena all’interno del bosco che sta a circa mezz’ora di cammino dai vostri nuovi nemici, anche se loro non sanno ancora di esserlo. La notte è buia come la peste, le nuvole coprono gran parte delle stelle e il vento freddo soffia con un rumore inquietante. Seppure i vostri arti siano quasi congelati, questa è paradossalmente la serata migliore per compiere il vostro piano e le poche armi, vere ed improvvisate che avete, sono pronte. Pochi parlano. Il segnale luminoso di Jacob, il vostro uomo di avanguardia arriva appena alla vostra vista. Ivo dice: «Veloci. Silenziosi. Precisi» </em>
+
+Il MP chiede ai giocatori qual è il loro piano per far fuggire il prescelto e saccheggiare altro cibo. Pensano di ricordare qualcosa in particolare della struttura della Cascina del Ponte? (tiro su MENTE LDO 3 se l’hanno visitata nella scena 2, LDO +1 se non l’hanno fatto) Come vogliono fare? Cercano di rapire/o fare fuggire altri per dissimulare i sospetti? Cosa prendono? Sono divisi in 1, 2, o più mini-divisioni?
+
+In caso di difficoltà suggerisce che l’obiettivo dei giocatori dovrebbe essere quello di entrare da una piccola falla nelle mura che uno di loro aveva notato il giorno della prima visita a Serji, oppure che un PNG aveva notato in passato mentre esplorava la regione.
+
+A seconda delle scelte i giocatori tirano per esempio per: entrare furtivi (DETERMINAZIONE/CORPO), convincere gente a stare zitta/farli passare (PRESENZA), attaccare gli avversari (CORPO/DETERMINAZIONE/ REAZIONE), aprire un particolare gancio di chiusura del silo incastrato in maniera atipica (MENTE LDO=3)
+
+NON APPENA QUALCOSA VA STORTO OPPURE NON APPENA I PG STANNO PER FARLA FRANCA:  “<em>Uno sparo rompe il silenzio. Una delle guardie ha notato qualcosa e un proiettile fischia nella vostra direzione. Alcune porte si aprono, Stanislao grida: «INTRUSI! DA DOVE CAZZO SONO ENTRATI?» In pochi istanti l’intera legione di Serji è pronta e armata fino ai denti. In nessun caso avranno pietà di voi”</em>
+
+<strong>AVVERSARI: Soldati della Città (7) + Serji </strong>(PER STATISTICHE VEDI SCENE 1 e 2)
+
+NON APPENA 5 Soldati o Serji sono stati annientati, TUTTI I PG hanno preso almeno una lesione o 1 PG ha preso la terza lesione (in questo caso sviene e deve essere trasportato da qualcuno), un Juggernaut sfonda un pezzo di recinzione vicino al cancello e i Soldati residui si devono occupare di lui. I PG possono scappare.
+
+<strong>Chiusura della scena: “</strong><em>Proprio mentre la battaglia infuria un rumore arriva in direzione del cancello, un grosso clangore e uno strepito, precedono un tonfo metallico. Uno Juggernaut ha divelto parzialmente la recinzione vicino al cancello e con un ringhio profondo e cupo si avvicina pericolosamente verso voi e i membri ancora in grado di combattere della Cascina del Ponte. Fortunatamente la sua mole non gli permette di muoversi troppo velocemente. Serji, quasi a sorpresa, ordina ai suoi uomini di occuparsi del mostro. Per voi è l’occasione giusta per fuggire, insieme al prescelto, con quello che siete riusciti a sgraffignare, ma non prima di sentire il capo della Cascina del Ponte inveirvi contro gridando vendetta. Vi siete fatti un nemico, forse uno troppo pericoloso anche per voi.”</em>
+<h4><strong>4C – SACCHEGGIO E DISTRUZIONE DELLA COMUNITA’ DEL PONTE</strong></h4>
+<strong>Introduzione alla scena “</strong><em>È passato ormai qualche giorno da quando avete deciso, non solo di rifiutare l’offerta della Cascina del Ponte, ma addirittura che il vostro compito fosse quello di liberare pure quella quindicina di persone che pensate siano schiavi di Serji e della sua Legione. Qualcuno pensa che sia una stata una scelta suicida ma ormai è tardi per cambiare idea. Alea Iacta Est. In questo momento vi trovate con praticamente tutta la vostra Comunità al limitare del bosco che sta a circa mezz’ora di cammino dai vostri nuovi nemici, anche se loro non sanno ancora di esserlo. La notte è limpida e luminosa le stelle brillano in cielo ed illuminano la notte come se fosse giorno e il vento freddo dei giorni scorsi stanotte tace. La quiete prima della tempesta, ogni rumore potrebbe essere pericoloso, ma ormai siete lì è giunto il momento di attaccare.”</em>
+
+Il MP chiede ai giocatori qual è il loro piano di attacco. Come vogliono fare? Sono divisi in mini-divisioni o attaccano tutti assieme frontalmente? Qualcuno usa fionde improvvisate per attaccare a distanza? La Comunità ha fucili con poche munizioni?
+
+<strong>“</strong><em>Quando vi avvicinate notate che ci sono tre guardie di vedetta e non le classiche due. Qualcuno dice “Cazzo non dovevano essere solo due?” </em> <em>Il primo colpo parte da qualcuno dei vostri, qualcuno troppo nervoso e tremante. Le guardie rispondono subito. È già il caos.”</em>
+
+Se i giocatori hanno scelto di dividere l’attacco su 2 fronti il colpo parte da qualcuno dell’altra divisione e da modo ai giocatori di forzare l’ingresso con un Check di Posizione su Corpo/Mente/Determinazione. Dopodichè la battaglia infuria ma in questo caso non arriva il Juggernaut a salvare la situazione.
+
+<strong>AVVERSARI: Soldati della Città (7 = 6 + Stanislao) + Serji </strong>(PER STATISTICHE VEDI SCENE 1 e 2) LDO di tutti ridotto di 1 perché non si aspettavano l’attacco
+
+I personaggi devono fare fuori almeno 6 avversari. Se restano 2 Soldati senza Serji, o Serji da solo questi fuggono. Se un PG subisce 3 ferite prima che questo accada il PNG della comunità suo legame mozza la testa a due soldati e corre a soccorrerlo, poi Serji e i suoi si ritirano, (ma torneranno forse più avanti?)
+
+<strong>Chiusura della scena: “</strong><em>Al termine di questa sanguinosa battaglia, poco sembra essere rimasto della vostra umanità. I cadaveri dei Soldati della Cascina del Ponte sono li che vi guardano con gli occhi vitrei insieme a quelli dei compagni che sono caduti al vostro fianco. Qualcuno timidamente esce dalla propria abitazione e vi guarda. Il vostro capo della comunità li osserva e dice «Il tempo della tirannia di Serji è terminato, chi vuole può unirsi a noi, ma solo se porterete provviste con voi, noi siamo già in crisi alimentare». Qualcuno chiede «Che ne farete dei corpi ora?» Ivo risponde «Li bruceremo ora. Tutti. È l’unica scelta sensata. Poi domattina chi vorrà, potrà seguirci come già detto dal nostro leader». L’indomani, solo due persone decidono di unirsi alla comunità dei Personaggi, portando con loro una capra e provviste per sostenere loro e forse un altro paio di persone per l’inverno. Gli altri hanno deciso che ricostruiranno la Cascina del Ponte e la trasformeranno in un luogo pacifico.”</em>
+<h3><strong>4D – RAZIONAMENTO</strong></h3>
+<strong> </strong><strong>Introduzione: “</strong><em>Dopo aver discusso cosa fare di Tomas, rientrate nella Comunità. L’aria è gelida, la giornata grigia e nuvolosa e il vento che ulula accompagna questo momento in una maniera che rende ancora più tetra la decisione che avete preso il giorno precedente. E l’inverno è solo all’inizio. Ivo si avvicina a voi e vi dice </em>«<em>Allora iniziamo a contare di nuovo? Dobbiamo razionare ora»”</em>
+
+Se i personaggi hanno deciso di parlare di Tomas possono farlo ora, altrimenti mentre contano si rendono conto che un altro sacco di grano pare essere stato contaminato, fortunatamente in maniera più leggera. Cosa fanno?  Come decidono di razionare? Chi gestisce le porzioni ora? Qualcuno farà la guardia al granaio?
+
+Mentre discutono, se non hanno parlato di Tomas, qualcuno entra e dice “Voi lo sapevate e non ce lo avete detto? È la seconda volta in pochi giorni…” Tomas ha confessato a tutti.
+
+In ogni caso va giocato l’INTERMEZZO DI TOMAS
+
+<strong>Chiusura della scena e dell’atto: “</strong><em>Dopo che la Comunità ha deciso le sorti di Tomas, l’aria si fa densa di un misto di rabbia e indignazione perché tutto questo poteva essere evitato. Qualcuno vi sta accusando di essere stati complici di questa follia sin dall’inizio, quando il giovane che stava svolgendo il turno di guardia si materializza davanti a voi «Un fottuto Errante ha fatto per almeno 10 minuti su e giù per i nostri campi come cercasse qualcosa che non riusciva a trovare. Ora sembra sparito ma che facciamo non ne ho mai visto uno così». Ivo risponde cinicamente «Ce ne occuperemo se e quando tornerà. Ora abbiamo altro a cui pensare».</em>
+
+<em> </em><strong>SE TOMAS È STATO PERDONATO</strong>
+
+<em>Ed è esattamente in quel momento che vi rendete conto che si è scatenata una catena di eventi dall’effetto probabilmente irreversibile. E che l’inverno è solo all’inizio”</em>
+
+<strong>SE TOMAS NON È STATO PERDONATO</strong>
+
+<em>Ed è esattamente in quel momento che Lorena, a figlia di Tomas si avvicina a voi. È logico che non capisca tutto di quello che sta succedendo, ha 5 anni. Ma capisce abbastanza. Vi guarda negli occhi con uno sguardo un po’ malinconico e vi chiede: « Se papà è cattivo… perché ha fatto quello che avete fatto anche voi?»”</em>
+<h3><strong>FINE ATTO: </strong></h3>
+GIOCARE L’INTERMEZZO DI TOMAS SE NON È ANCORA STATO GIOCATO
+
+IN OGNI CASO:
+
+<strong>Chiusura dell’atto per le scene 4A 4B 4C: “</strong><em>Dopo gli eventi degli ultimi giorni e, soprattutto dopo che la verità su Tomas è uscita allo scoperto, all’interno della Comunità ormai si respira un’aria tesa e densa, pregna di un misto di rabbia e indignazione perché tutto questo poteva davvero essere evitato. Qualcuno vi ha persino accusato di essere stati complici di questa follia sin dall’inizio. State giusto parlandone con Ivo, chiedendogli di aiutarvi a far ragionare queste “teste calde”, quando il giovane che stava svolgendo il turno di guardia si materializza davanti a voi «Un fottuto Errante ha fatto per almeno 10 minuti su e giù per i nostri campi come cercasse qualcosa che non riusciva a trovare. Ora sembra sparito ma che facciamo non ne ho mai visto uno così». Ivo risponde cinicamente «Ce ne occuperemo se e quando tornerà. Ora abbiamo altro a cui pensare»”. </em>
+
+<strong>SE TOMAS È STATO PERDONATO</strong>
+
+<em>Ed è esattamente in quel momento che vi rendete conto che si è scatenata una catena di eventi dall’effetto probabilmente irreversibile. E che l’inverno è solo all’inizio”</em>
+
+<strong>SE TOMAS NON È STATO PERDONATO</strong>
+
+<em>Ed è esattamente in quel momento che Lorena, a figlia di Tomas si avvicina a voi. È logico che non capisca tutto di quello che sta succedendo, ha 5 anni. Ma capisce abbastanza. Vi guarda negli occhi con uno sguardo un po’ malinconico e vi chiede: « Se papà è cattivo… perché ha fatto quello che avete fatto anche voi?»”</em>
+<h2>ATTO III – L’INVERNO (Sessione 3)</h2>
+Qui non c’è un unico finale.
+C’è <strong>conseguenza pura</strong>.
+
+<strong>Se hanno ceduto una persona</strong>
+
+La comunità sopravvive.
+
+Ma:
+<ul>
+ 	<li>Il partner o familiare del ceduto può diventare instabile.</li>
+ 	<li>Possibile scena finale: la persona ceduta ritorna, scappata… portando caos.</li>
+</ul>
+Finale:
+Sopravvivenza a prezzo dell’anima.
+
+<strong>Se hanno tradito</strong>
+
+La Cascina manda esploratori armati.
+
+Possibile assedio breve.
+
+Finale:
+Sopravvivono ma diventano aggressivi, paranoici.
+
+Oppure perdono qualcuno durante la rappresaglia.
+
+<strong>Se hanno saccheggiato e distrutto Serji</strong>
+
+Nei giorni successivi alla liberazione della Cascina, venite a sapere che un attacco da parte di alcuni Risvegliati ha contaminato parte delle loro riserve. Purtroppo non potrete più ricevere aiuti alimentari da loro, almeno per questo inverno.
+
+<strong>Se hanno razionato</strong>
+
+L’inverno è lento e crudele.
+
+Scene da giocare:
+<ul>
+ 	<li>Vecchio che si lascia morire.</li>
+ 	<li>Madre che ruba cibo.</li>
+ 	<li>Ragazzo che scappa.</li>
+</ul>
+Finale:
+Comunità più piccola ma forse più unita.
+Oppure spaccata in due.
+<h3><strong>ATTO III – Introduzione</strong></h3>
+Qui giochiamo conseguenze.
+
+<strong>Introduzione all’Atto III: “</strong><em>Le dura scelta che avete fatto poche settimane fa, non pare aver risolto del tutto la Crisi che state vivendo. L’inverno arriva senza rumore. La prima neve cade durante la notte. Il mattino dopo la comunità si sveglia in un mondo bianco e silenzioso. Lo strano Errante avvistato dal giovane Alan quella sera si muove lentamente su e giù per i vostri campi ma non si avvicina mai. Viene e va periodicamente. Sono vari giorni che non vedete nessuno di quelli della Cascina e voi non avete avuto necessità di riprendere la strada che va da loro. Tutto tace ma il cibo sembra finire troppo in fretta, le persone parlano meno. E la paura cresce.”</em>
+<h3><strong>Scena 1: Prime perdite</strong></h3>
+Qualcuno muore. Non eroicamente. Male. Lento. Qualcun altro per colpa degli erranti. <strong>Obiettivo:</strong> Rendere reale il prezzo.
+<strong>Pressione:</strong> Colpa mirata. <strong>Può andare storto:</strong> accuse dirette ai PG.
+
+<strong>Introduzione alla scena: “</strong><em>Il villaggio è silenzioso. Le finestre sono chiuse con assi. Il vento passa tra le case. Il cibo ora viene distribuito una volta al giorno, più o meno a mezzogiorno. Le persone sono più magre. Gli occhi più scavati</em>. <em>Voi siete lì a distribuire il cibo e il solito Jacob sta facendo casino e sta per strattonare qualcuno. Mentre questo accade un fragore spezza il silenzio. Il tetto del capanno degli attrezzi appena fuori dalle mura è appena caduto sotto il peso della neve. Incurante di ciò Jacob, continua a strattonare il malcapitato.</em>”
+
+COSA SCELGONO DI FARE I PERSONAGGI?
+<ul>
+ 	<li>CON JACOB possono provare a trattare o Minacciarlo (Check di Presenza/Determinazione), bloccarlo (Determinazione) o menarlo (Corpo)</li>
+ 	<li>SE VANNO AL CAPANNO: Due persone sono sotto le macerie, possono provare a salvarle (CORPO/DETERMINAZIONE) ma c’è il pericolo del tetto pericolante, che crolla ancora mentre ci provano (Check Difesa Reazione con LDO 5). Se passano tutti i Check li salvano altrimenti almeno uno muore. Se non vanno si trasformeranno in poche ore in due Risvegliati.</li>
+</ul>
+<strong>Complicazione: IN OGNI CASO “</strong><em>Il rumore attira quelli che sembrano proprio essere 3 Erranti fuori dal bosco che si fiondano verso il capanno.” </em>
+
+I PG al capanno devono fare una scelta salvare le persone o difendersi. Il tempo è pochissimo. A meno che non ci sia nessun PG all’esterno delle mura il MP legge questo: “ <em>Quelli che vedete muoversi verso il capanno sono esattamente tre: uno con il cranio spaccato dal quale fuoriesce un enorme escrescenza fungina ricoperta di neve, come un macabro e sarcasticamente tetro parrucchino che vi ricorda la il taglio di capelli di Hitler, uno che sembra congelato a metà, numerose escrescenze piccole come aghi di pino gli escono dal torace e sembrano ricoperte di ghiaccio, l’ultimo è uno estremamente magro ma molto veloce, è un Blitzer”</em>
+
+<strong>NEMICI:</strong>
+
+<strong>JACOB </strong>VEDI STATISTICHE ATTO 1 SCENA 3 (si ritira dopo prima lesione perché più debole)
+
+<strong>ERRANTI (2) </strong>VEDI STATISTICHE ATTO 2 PREQUEL
+
+<strong>BLITZER (1) Descrittore</strong>: Punto una preda alla volta, non mi curo di nulla quando le corro incontro. <strong>LDO: 4 - Lesioni: 1 Dono</strong> - <strong>Placcaggio</strong>: quando un Blitzer scatta emergendo dal branco riesce a coprire
+
+una considerevole distanza in pochi secondi per poi buttarsi contro la preda più vicina. La velocità di un
+
+Blitzer impone 1 Dado di Svantaggio alle azioni volte a colpirlo con armi a distanza e ai Check di Difesa
+
+volti a resistere al suo tentativo di placcaggio. Se il Check di Difesa fallisce, il bersaglio si troverà a terra costretto a combattere da quella posizione.
+<h3><strong>Evento 2 – la morte di fame</strong></h3>
+“<em>Qualche giorno dopo. Una vecchia (Teresa) smette semplicemente di mangiare. Non perché non voglia. Ma perché non ha più forza. Rachele vorrebbe provare a curarla. Ma teresa dice che non Non serve. Con voce debole aggiunge «Non sprecate cibo.» «Tenetelo per i bambini.» Pausa. «Era sempre destinato a finire così.»</em>
+
+I PG possono provare a curarla (MENTE/DETERMINAZIONE) ma se non ottengono un successo con incremento muore lentamente. Se ottengono successo supera la notte ma il giorno successivo di nascosto dà la sua razione alla figlia di Tomas, la seconda notte muore, se falliscono muore già la prima notte.
+
+<strong>Conseguenze della Morte “</strong><em>Due morti in pochi giorni. Qualcuno nella Comunità inizia a cercare colpevoli.” </em>SE I PG HANNO CONSEGNATO QUALCUNO: <em>«Abbiamo venduto una persona e stiamo morendo lo stesso.»</em> SE HANNO ATTACCATO LA CASCINA<em>: «Ci avete portato la guerra, mentre se avessimo scelto di lasciare qualcuno a Serji questo non sarebbe successo» </em>SE HANNO RAZIONATO: <em>«Questa è stata la vostra scelta. Razionare anche se sapevate benissimo che non sarebbe servito a nulla»</em>
+
+<span style="text-decoration: underline;">I Personaggi possono controbattere</span>
+
+<strong>Chiusura della Scena “</strong><em>Durante il funerale/Il giorno successivo al salvataggio di Teresa “Un Errante solitario appare tra gli alberi. Non attacca. Sta solo fermo. Guardando il PG che ha marchiato nell’atto II. Seppure resti a una discreta distanza da tutti voi e non pare proprio che voglia spostarsi da lì, questo comportamento e quello che sembra essere il suo sguardo sono piuttosto inquietanti. Un perenne monito che il pericolo non finisce mai.”</em>
+<h3><strong>Scena 2: La frattura -  POSSIBILE CURARE UNA LESIONE -</strong></h3>
+<strong>Introduzione alla scena: “</strong><em>Sono passate</em> <em>poco più di due settimane. La tensione ha portato alla creazione di due fazioni: una contesta le vostre ultime scelte e alcuni di loro ne stanno parlando in cortile. Qualcuno è nel magazzino delle scorte, a controllarle per l’ennesima volta, è sera inoltrata. L’eco della stanza lo fa sembrare ancora più vuoto di quanto già non sia. Sono rimasti pochi sacchi. Due membri della comunità iniziano a litigare, stranamente Jacob non c’entra stavolta… Uno comunque accusa l’altro di aver preso una razione extra. La tensione esplode. «Hai mangiato più di tutti!» «Stai zitto.» «Mio figlio ha fame!» Un pugno parte.”</em>
+
+COSA FANNO I PERSONAGGI? Chi c’è e chi invece è fuori a controllare il cortile? Oppure sono tutti nello stesso luogo? Con chi parlano e cosa dicono?
+<h4><strong>SE QUALCUNO È IN CORTILE E LA CASCINA È STATA TRADITA</strong>:</h4>
+<em>“Qualcuno sente colpi contro la porta principale del villaggio. Non sono Erranti. Sono lenti e regolari. Quando i PG arrivano trovano: un uomo congelato quasi morto. Non parla molto. Dice solo: «Non aprite ai carri.» Poi perde conoscenza.”</em>
+
+Se viene curato con successo rivela che alcuni gruppi stanno catturando persone per lavorare nei campi e forse non solo. Questo potrebbe collegarsi alla Cascina.
+
+PER BLOCCARE L’ALTERCO NEL MAGAZZINO  “<em>Jacob interviene separa i due Ma poi dice una frase pericolosa: «Questo succede quando non c’è disciplina.» Silenzio</em>.”
+
+<strong>L’ennesima riunione “</strong><em>La sera successiva una nuova riunione viene convocata da Ivo, che, sulla base della frase tagliente di Jacob ritiene che la situazione stia davvero degenerando troppo. La comunità non è mai stata così divisa, ma oggi c’è davvero bisogno di maggior raziocinio. Altrimenti finirà male. E molto prima del previsto.  La proposta di Ivo è questa: coprifuoco fino alla fine dell’inverno, razioni controllate più severamente dalle guardie, punizioni per chi ruba il cibo. «Esilio» dice Jacob cercando di correggerlo. Questo divide la comunità. Qualcuno dice «Ha ragione Jacob.» «Serve controllo.» Quelli della fazione opposta «Non siamo un esercito.» «Non siamo prigionieri.»”</em>
+
+COSA FANNO I PERSONAGGI E COSA PENSANO?
+
+<strong>COMPLICAZIONI DURANTE LA RIUNIONE:</strong>
+<ul>
+ 	<li>Jacob propone di <strong>rimuovere l’attuale leadership</strong>. <em>«Abbiamo bisogno di qualcuno che sappia prendere decisioni.» </em>Molti guardano i PG.</li>
+ 	<li>Un uomo estrae un coltello e si fionda sul capo della comunità</li>
+ 	<li>La situazione può degenerare in rissa</li>
+</ul>
+<strong>AVVERSARI</strong>: 3 RESIDENTI PER CIASCUNA FAZIONE - LDO 3 - 1 Lesione NESSUN DONO
+
+<strong>QUALSIASI COSA FACCIANO I PERSONAGGI, </strong>durante la rissa o dopo qualche scambio succede qualcosa a seconda della scelta dell’atto 2.
+<h4><strong>SE HANNO RAZIONATO</strong>:</h4>
+“<em>Qualcuno urla: “Che cazzo ci fa il magazzino aperto?” </em>
+
+SE I PG Vanno al magazzino notano un sacco tagliato
+
+“<em>Durante il controllo del magazzino trovate un sacco di grano tagliato di nascosto. Una piccola quantità è stata rubata. Il problema è che non si capisce quando è successo e soprattutto chi sia stato.”</em>
+
+IN OGNI CASO vedono un paio di persone fuggire.
+
+<strong>Chiusura della scena: “</strong><em>Due ombre in lontananza vi passano nel campo visivo. Una più grande, forse un adulto. L’altro più basso, potrebbe essere tranquillamente un ragazzino entrambi con un grosso zaino sulle spalle. Dovete inseguirli!”</em>
+<h4><strong>SE HANNO TRADITO O DISTRUTTO LA CASCINA:</strong></h4>
+“<em>Una sentinella urla. «Movimento fuori dal villaggio!» Di colpo il trambusto dell’assemblea si blocca e tutti restano immobili come delle statue di cera ghiacciate sotto la neve che ha ricominciato di nuovo a cadere.”</em>
+
+<strong>Chiusura della scena (Tradimento): </strong>“<em>Due grossi carri di legno, armati uno con un ariete improvvisato e l’altro con una catapulta, si stanno muovendo verso la città. A bordo dei carri ci sono Serji e un’altra dozzina di Soldati, oltre ai suoi fedelissimi, dotati di maschere a gas, c’è anche altra gente. Qualcuno cerca di sbarrare il cancello per prendere tempo, ma presto, molto presto una battaglia imperverserà nel vostro villaggio”</em>
+
+<strong>Chiusura della scena (Distruzione): </strong>“<em>Alcune creature mostruose si stanno pericolosamente avvicinando alle mura. Uno, vedendo la sentinella, si sgancia dal gruppo e si fionda verso il cancello. Un colpo tremendo lo fa tremare ma regge, per ora. Dietro di lui a guidare il resto del gruppetto c’è una alta, con delle escrescenze arancioni fra le braccia e le ascelle, sembra proprio essere quella che gira da tempo intorno alla Comunità. Si stanno avvicinando in fretta, presto dovrete respingerli”</em>
+<h4><strong>SE HANNO LASCIATO UNA PERSONA:</strong></h4>
+“<em>Un tizio su un carro sta arrivando! È inseguito da qualcosa! Di colpo il trambusto dell’assemblea si blocca e tutti restano immobili come delle statue di cera ghiacciate sotto la neve che ha ricominciato di nuovo a cadere”</em>
+
+Il tizio si chiama André, è inseguito dall’implacabile, porta con sé una botte con del liquido violaceo e tre sacchi e mezzo di uva e una gallina.  Chiede ai PG di farlo entrare, è solo e promette di pagare con la botte di vino se lo traggono in salvo e lo fanno riposare stanotte presso di loro.
+
+<strong>Chiusura della scena: </strong>“<em>Una volta aperto il cancello André vi ringrazia gettandosi a terra spaventato per il pericolo appena corso. «Grazie, Grazie mille. Quel coso inquietante… non era solo nel bosco. Vi prego prendete questa botte di vino, come vi ho promesso ve la dono per avermi salvato e per permettermi di  restare per stanotte. Poi domani tornerò a casa, magari da una strada diversa…». Ivo lo scorta in una capanna libera e lo chiude dentro «Perdonaci ma abbiamo avuto dei problemi in passato, domattina ti aprirò io».”</em>
+<h3><strong>Scena 3: Conseguenza esterna</strong></h3>
+Dipende dalla scelta del II atto:
+<ul>
+ 	<li>Se tradimento → esploratori armati avvistati.</li>
+ 	<li>Se saccheggio → sabotaggio notturno.</li>
+ 	<li>Se consegna → voce che la persona ceduta è maltrattata.</li>
+ 	<li>Se razionamento → qualcuno tenta di scappare.</li>
+</ul>
+<strong>Obiettivo:</strong> Dimostrare che nulla resta confinato.
+<strong>Pressione:</strong> Sicurezza.
+
+Questa scena cambia <strong>in base alla scelta del secondo atto</strong>.
+<h3><strong>3A – SE SI ERA SCELTO TRADIMENTO</strong></h3>
+<strong>Introduzione alla scena: “</strong><em>Mentre il panico inizia a farsi largo all’interno della Comunità i carri si avvicinano e la nevicata diventa quasi una bufera. Ivo ordina di andare a prendere qualsiasi cosa utile per resistere a questo improvviso assalto notturno. Tutti sapevano che prima o poi sarebbe successo, nessuno immaginava sarebbe stato di notte e nessuno sapeva che la Cascina avesse dei carri. «Donne e anziani al riparo! Tutti gli altri pronti alla battaglia» grida il capo della Comunità. Un vecchio non cede. Vuole combattere, imbraccia una lancia di legno e dice guardando uno dei PG «Siete la mia famiglia. Combatterò al vostro fianco fino alla morte»” </em>
+
+Come agiscono i Personaggi? Dove hanno lasciato le armi? Cosa imbracciano? Chi comanda la difesa? Quale strategia vorrebbero usare?
+
+<strong>“</strong><em>Mentre ancora vi state organizzando un botto contro il cancello. L’ariete colpisce ma non riesce ancora a sfondarlo. Quasi contemporaneamente dall’alto qualcosa piove dal cielo «Cazzo! Stanno catapultando degli Erranti dentro le mura» urla Jacob. Uno cade vicino ad uno dei Personaggi e si spiattella a terra. Una grossa nuvola cremisi si alza mentre il suo corpo, si trasforma in una massa fungina immonda e informe. Altri due, più piccoli, atterrano poco lontano”</em>
+
+Il PG subisce <strong>1 Punto Contaminazione</strong>. Poi altri tre lanci (2/3 Erranti per lancio). I Personaggi possono provare a schivarli con un Check di Difesa. Se falliscono vengono colpiti in pieno, sono atterrati e subiscono <strong>1 Punto Contaminazione</strong>. Con un successo con costo gli cade l’arma che imbracciano oppure cadono a terra ma non perdono l’arma. Con un successo con Incremento possono correre nel vicino capanno e prendere alcune maschere, Mascherine FFP2, e sciarpe per evitare di respirare troppe spore.
+
+PERICOLO <strong>LANCIO DI CATAPULTA LDO 5 Descrittore: </strong><em>Non è semplice schivare quello che ci lanciano, per fortuna il mezzo è lento ad avanzare</em>. <strong>Dono - Travolto</strong>: se il Personaggio non riesce nel suo Check di Difesa, oltre alle conseguenze narrative dettate dalla Scena, potrebbe subire anche 1 Lesione aggiuntiva a discrezione del MP.
+
+“<em>Proprio mentre il quarto gruppetto di Erranti si sfracella al suolo, alzando l’ennesima nuvola di nebbia rossastra l’ariete sfonda il cancello, Serji, appena visibile fra la neve che cade copiosa e la nebbia di spore cremisi vi grida con gli occhi iniettati di rabbia e sangue «Avete cercato di fottermi e voluto riprendervi ciò che era mio. Ora mi prenderò tutto, compreso le vostre vite!», nel mentre i nemici scendono lanciandosi fra la vostra gente. Ci sono una dozzina di persone, fra cui appunto Serji, Stanislao e gli altri ex militari a loro fedeli, li riconoscete poco prima che indossino le maschere antigas, e poi ci sono 4 facce che non avete mai visto. Questi sembrano dei soldati improvvisati, decisamente più impauriti degli altri e meno convinti di voler rischiare la vita, oltretutto senza maschere. L’aria attorno a voi, nel frattempo, si è riempita ancora di più di pericolose spore, che miste alla neve si attaccano sui vostri cappotti”</em>
+
+Cosa fanno i Personaggi? Combattono o fuggono? Ci sono una dozzina di persone, oltre ai PG, a difendere la città. La Comunità è in soprannumero ma loro sono meglio armati, hanno il vantaggio della sorpresa e un piano di attacco.
+
+DURANTE LA BATTAGLIA:
+<ul>
+ 	<li>SE I PG NON HANNO le maschere/sciarpe protettive subiscono <strong>1 ulteriore Punto Contaminazione</strong></li>
+ 	<li>Se due attacchi dei Personaggi o dei loro alleati vanno a segno <strong>NELLO STESSO SCAMBIO</strong> o un attacco fa <strong>2 LESIONI</strong> per un successo con incremento, uno dei Soldati Improvvisati non viene ferito ma implora pietà, svelando di essere stato costretto insieme ad altri e che è disposto a tutto pur di non morire insieme ai suoi amici. Questa è l’occasione per i Giocatori di sfruttare il dono Volta gabbana</li>
+ 	<li>Se i Soldati improvvisati passano dalla parte dei Personaggi eliminano subito 1 soldato della Cascina e poi ancora 1 ogni 2 scambi. Altrimenti fuggono dopo qualche scambio.</li>
+ 	<li>IL VECCHIO NON DEVE MORIRE (per ora) e può essere sostituito da un PNG legame di un PG</li>
+</ul>
+<strong><em>AVVERSARI (12)</em></strong>
+
+<strong><em>SOLDATI DELLA CASCINA DEL PONTE (6) + STANISLAO </em></strong><em>(VEDI STATISTICHE NELL’ATTO 2)</em>
+
+<strong><em>SERJI</em></strong><em> (VEDI STATISTICHE NELL’ATTO 2)</em>
+
+<strong><em>SOLDATI IMPROVVISATI (4) LDO 4 – Lesioni 4 (1 ciascuno) DESCRITTORE: </em></strong>Combattiamo ma abbiamo paura di Serji e potremmo passare dalla vostra parte con la giusta motivazione
+
+<strong><em>DONO: Volta gabbana</em></strong><em>. Il Personaggio che li attacca guadagna 1 Dado di vantaggio se, dopo uno scambio che ha fatto almeno 2 lesioni al gruppo di Serji (loro inclusi), prova a convincerli a passare dalla sua parte con un Check di Presenza. Se ottiene un fallimento o un successo con costo però, un altro soldato improvvisato lo pugnala e il PG subisce una lesione.</em>
+
+<strong>Chiusura della scena: </strong>“<em>E così termina questa sanguinosa battaglia, una carneficina che sembra durata un secolo. Quasi a suggellare la fine definitiva della Cascina del Ponte anche la neve smette di cadere. Sconfortati vi guardate intorno e vi rendete conto che la vittoria è stata amara, oltre a voi e ai soldati improvvisati </em>(FUGGITI O UNITISI AI PERSONAGGI)<em> solo Ivo, il capo della comunità, due gemelle combattenti e il vecchio sono ancora in piedi. Jacob stesso giace con una picozza nel cranio ai piedi di uno di voi. Era un osso duro ma si è battuto con onore per la comunità. Proprio mentre lo osservate il vecchio si inginocchia a terra, toccandosi l’addome. (IL MP DECIDE SE </em>SERJI DA TERRA LO HA INFILZATO CON QUALCOSA O SE ERA GIA’ FERITO DA PRIMA E NON SI ERA ACCORTO NESSUNO)<em>, un fiotto di sangue gli cola tra le mani mentre guardando negli occhi uno dei personaggi a cui è molto legato dice «Figliolo, continua a proteggere questa Comunità, stai facendo un buon lavoro», poi crolla definitivamente a terra e con gli occhi vitrei esala il suo ultimo respiro. ”</em>
+<h3><strong>3B – SE SI ERA SCELTO SACCHEGGIO</strong></h3>
+<strong>Introduzione alla scena</strong><em>: ”Il Blitzer, ci riprova spostandosi leggermente. Qualcuno di voi si rende conto che lo strano Errante che guida il gruppetto che si sta avvicinando sembra guardarlo negli occhi e, se non fosse che ha una voragine al posto della bocca, parrebbe quasi sorridergli in maniera malefica. Poco dietro ci sono un altro Errante ed un essere molto diverso da quelli che siete soliti incontrare, alto e con il corpo sottile, ricoperto di escrescenze nerastre. La testa è caratterizzata da una massa fungina scura e dalla forma ovale. Mentre si sposta velocemente da un lato, notate che a chiudere la fila ce ne è ancora uno dall’aspetto decisamente più comune. Al terzo tentativo il blitzer riesce a scardinare il cancello e ad entrare. Per un secondo il vostro sguardo si rivolge a lui e quando lo rialzate la strana creatura nerastra sembra essere svanita nel nulla. L’ultimo della fila invece si è fermato, gonfia il petto e si prepara a lanciare il suo grido di richiamo.”</em>
+
+COSA FANNO I PG NEL FRATTEMPO? COME SI PREPARANO ALLA BATTAGLIA?
+
+DURANTE LA BATTAGLIA:
+<ul>
+ 	<li>L’URLATORE richiama (se non muore) altri 2 erranti ogni 2 scambi.</li>
+ 	<li>Un PG sente un ululato vicino, un cane randagio, arrivato forse alla ricerca di cibo e che nessuno aveva notato lo fa girare giusto in tempo. IL NOCTURNO, dopo essere sparito compare dietro un PG, dopo il suo primo attacco possono notare che alle sue spalle ci sono a terra Jacob (decapitato) e un altro paio di persone ferite mortalmente.</li>
+ 	<li>Il cane svanisce nel nulla spaventato dalla battaglia</li>
+</ul>
+<strong>AVVERSARI</strong>
+
+<strong>BLITZER </strong>(VEDI STATISTICHE ATTO 3 SCENA 1)
+
+<strong>IMPLACABILE </strong>VEDI STATISTICHE ATTO 2 SCENA 3)
+
+<strong>URLATORE + ERRANTI </strong>(VEDI STATISTICHE ATTO 2 PREQUEL)
+
+<strong>NOCTURNO - Descrittore</strong>: <em>La notte è il mio dominio, nessuno può vedermi. </em><strong>LDO: 6 - Lesioni: 3</strong>
+
+<strong>Dono - Imboscata</strong>: la capacità di mimetizzazione notturna e quella di muoversi silenziosamente rendono questo Risvegliato un maestro degli agguati. Quando un Nocturno decide di tendere un agguato a sorpresa, l’ignara vittima subisce 1 Dado di Svantaggio al primo Check di Difesa. Se l’agguato di questo Risvegliato va a segno, oltre alla Lesione inflitta, il bersaglio verrà investito da una nube di spore irritanti che gli impedirà di chiamare aiuto, o anche solo di parlare, per il resto della Scena.
+
+<strong>Dono - Trappola</strong>: quando un Nocturno subisce 2 Lesioni tenterà la ritirata tendendo una trappola ad eventuali inseguitori. Se un Personaggio dovesse inseguirlo subirà 2 Dadi di Svantaggio al primo Check di Difesa effettuato.
+
+<strong>Dono - Parassita</strong>: una volta per Scena un Nocturno può tentare di introdurre un parassita all’interno di un umano, usando un aculeo che fuoriesce dai palmi delle sue mani. Se la vittima fallisce un Check
+
+di Difesa, oltre alla Lesione subita gli verrà inoculato un parassita. Quest’ultimo inizierà a farsi strada sottopelle, in direzione del cuore. Se il parassita non viene estratto entro la fine della Crisi successiva,
+
+la vittima si trasformerà in Nocturno
+
+<strong>Chiusura della scena: </strong>“<em>Una volta eliminati tutti i nemici riuscite in qualche modo a richiudere la falla fatta dal Blitzer e notate che finalmente sembra regnare il silenzio. È un silenzio inquietante che non fa presagire nulla di buono ma in ogni caso è sempre meglio del caos scatenato da quegli schifosi Risvegliati. I tempi duri non sono ancora finiti, lo sapete benissimo” </em>
+<h3><strong>3C – SE SI ERA SCELTO RAZIONAMENTO</strong></h3>
+<strong>Introduzione alla scena</strong><em>:”La corsa dei due fuggitivi si ferma poco oltre il cancello. I loro zaini erano pesanti e voi siete stati più veloci di loro. Sono un padre e un figlio adolescente. Il padre è armato con una pistola. «Lasciateci andare.»”</em>
+
+Cosa fanno i personaggi? Hanno qualche arma improvvisata in mano o in tasca o sono a mani nude?
+
+Mentre cercano di negoziare col padre/fermarlo con la forza UN BLITZER che non avevano notato attacca il padre facendogli cadere lo zaino e staccandogli la testa. Poi i giocatori notano a una ventina di metri di distanza il gruppetto di nemici.
+
+<strong>Si gioca la stessa battaglia della Scena 3B. </strong>SE LA BATTAGLIA AVVIENE FUORI DALLE MURA, il Nocturno dopo due danni svanisce e lo ritrovano quando rientrano grazie al cane. Ha ancora un danno da subire ma ha già ucciso 4 persone all’interno delle mura.
+
+<strong>Chiusura della scena: </strong>“<em>Una volta eliminati tutti i nemici notate che finalmente sembra regnare il silenzio. È un silenzio inquietante che non fa presagire nulla di buono ma in ogni caso è sempre meglio del caos scatenato da quegli schifosi Risvegliati. I tempi duri non sono ancora finiti, lo sapete benissimo”</em>
+<h3><strong>3D – SE SI ERA SCELTO CONSEGNA</strong></h3>
+<strong>Introduzione alla scena</strong><em>: ”Il giorno successivo, di buon mattino Ivo torna ad aprire la porta della casa prestata ad André, che si sta già vestendo, in silenzio. Poi entrambi vi raggiungono nel cortile, André controlla il suo carro, sembra tutto a posto. Poi prende un po’ della sua uva e un paio di uova che rompe in una vecchia tazza di rame e vi chiede «Per quale motivo mi avete chiuso dentro quella casa? Questa notte ho pensato di essere finito nella Comunità sbagliata e che mi avreste tenuto prigioniero»”</em>
+
+Parlando con André e spiegando le proprie ragioni i Personaggi scoprono che:
+<ul>
+ 	<li>Viene da una piccolissima comunità in montagna, sono in 7, 5 uomini e due donne, tutti over 50. La comunità non è vicinissima, si è stabilita in quella che un tempo era una vecchia cascina, coltivano principalmente uva e producono vino, hanno un fiume vicino e, quando è partito era rimasta una sola gallina. Sono pacifisti e sono riusciti a sopravvivere finora solo perché una enorme zona Cremisi li protegge dalla gente, la zona è abbastanza impervia e dove non ci pensano i funghi a difenderli, arrivano il bosco e i predatori al suo interno, interessati comunque più ai pochi animali che riescono di tanto in tanto ad ottenere con gli scambi che a loro. Sembra che vivano in una specie di simbiosi con la Comunità di Andrés, che è il commerciante della Comunità. Solo i villeggianti sanno come entrare e uscire in sicurezza</li>
+ 	<li>era partito in cerca di nuove comunità con cui scambiare e chiede se avete qualcosa da commerciare (se non ora in tempi migliori lo facevate?)</li>
+ 	<li>ci sono voci che la Cascina del Ponte schiavizzi la gente, sia i volontari, sia coloro che sono costretti ad unirsi a loro per altri motivi, difficilmente arruolano mercenari però perché Serji si fida di pochi, pensava che voi foste come loro ma dopo poco capisce che siete stati fregati anche voi dalla Cascina del Ponte</li>
+</ul>
+<em>”Mentre Andrè parla con voi, altri si avvicinano curiosi per capire chi sia quest’uomo e quando si congeda, capendo che siete messi molto male vi regala anche mezzo sacco di uva «Ne avete più bisogno voi di noi, ma purtroppo non posso darvi altro, altrimenti non saprei cosa commerciare» e poi lo osservate uscire e proseguire nella direzione opposta rispetto a quella dalla quale è provenuto. Qualcuno si affretta a dire «Quindi quelli della Cascina del Ponte sono davvero degli schiavisti» e propone di andare a recuperare la persona che avete lasciato loro. Questo scatena una piccola discussione all’interno della comunità”</em>
+
+La comunità deve decidere ora se:
+<ul>
+ 	<li>ignorare le parole di André <em>«non possiamo credergli, non lo conosciamo, e se fosse una trappola?»</em></li>
+ 	<li>andare a riprendere il prescelto <em>«e se avesse ragione e abbiamo mandato un amico al macero? Io dico di combattere»</em></li>
+ 	<li>accettare la scelta <em>«ormai quel che è fatto è fatto, non possiamo rischiare né di cadere in una trappola né permetterci di inimicarci la Cascina del Ponte»</em></li>
+</ul>
+<strong>Chiusura della scena (Non si recupera il prescelto): </strong>“<em>Il capo della comunità dice: «mi sembra che non ci sia altro da dire. Non possiamo permetterci di rischiare nulla, siamo troppo debilitati e stanchi. Forse quando le cose si saranno assestate potremo ragionare con Serji e chiedergli un accordo al contrario e fare tornare da noi </em>(IL PNG CHE È STATO BARATTATO<em>). Per ora concentriamoci a sopravvivere. E che Dio ce la mandi buona, o almeno meglio di quanto abbia fatto con lui» conclude accarezzando il diario portafortuna che aveva trovato anni fa in un vecchio centro commerciale, quando i giorni della Piaga erano ancora quasi agli albori.”</em>
+
+<strong>Chiusura della scena (Recupero del prescelto): </strong>“<em>Il capo della comunità dice: «mi sembra che non ci sia altro da dire. Andremo a salvare il nostro compagno/a. Non possiamo permetterci che la comunità si sfaldi ancora di più per un errore del passato. Oggi e domani distribuiremo le razioni due volte. Dobbiamo prepararci ed essere nel pieno delle forze. Domani notte agiremo. E che Dio ce la mandi buona, o almeno meglio di quanto abbia fatto con lui» conclude accarezzando il diario portafortuna che aveva trovato anni fa in un vecchio centro commerciale, quando i giorni della Piaga erano quasi agli albori. E questa cosa vi scuote, soprattutto perché ha già fatto almeno un paio di volte questa “scenetta rituale” ed entrambe le volte sembrava che per la comunità fosse davvero tutto finito per sempre.”</em>
+
+SE SI SCEGLIE DI ANDARE A RIPRENDERE IL PRESCELTO VA ORA GIOCATA LA SCENA 4B DELL’ATTO 2 CON ALCUNE MODIFICHE ALL’INTRODUZIONE PRIMA DI PASSARE ALLA SCENA FINALE DELL’ ATTO 3
+<h3><strong>Scena finale: Il nuovo equilibrio – POSSIBILE CURARE UNA LESIONE</strong></h3>
+<strong>Introduzione alla scena</strong><em>: ”Sono passate alcune settimane dagli ultimi eventi traumatici. La carestia è stata dura, l’isolamento ancora di più, soprattutto perché nessuna delle poche comunità della vostra zona aveva cibo da scambiare e voi non avevate decisamente molto da offrire. Oltretutto di tanto in tanto vi capitava di trovare uno dei sacchi bagnati a suo tempo da Tomas, che avevate nascosto in un angolo sperando di non dovervi ricorrere mai, ribaltato a terra come se qualche animale lo avesse usato per nutrirsi. Dopo l’ultima battaglia, avvistare un Errante per fortuna era diventata una cosa rara, anche se un paio di volte avete incontrato degli strani Erranti che credete fossero una razza a metà con gli Urlatori, ma più stupidi, perché che si facevano notare a causa di uno strano ululato che probabilmente facevano prima di attaccare, probabilmente doveva essere un altro tipo di richiamo, ma non arrivava mai nessuno a loro supporto. In qualche modo sembra che però siate sopravvissuti comunque, anche se forse con un paio di morti di fame di troppo. Ora la giornata è fredda ma c’è il sole, la neve si sta lentamente sciogliendo e voi state dando l’ultimo saluto ad una donna, malata da tempo, ma che è riuscita miracolosamente ad arrivare fino a questa mattina, quando è crollata in mezzo al cortile. Qualcuno ha provato a fare qualcosa ma non c’è stato nulla da fare per lei”</em>
+
+I Personaggi discutono fra loro: chi è la donna? chi ha soccorso la donna? Chi parla al suo funerale? Cosa ne fanno del corpo? Lei voleva essere bruciata, seppellita o lasciata nel bosco per diventare parte della natura? Sanno cosa aveva e come è morta?
+
+<em>”Mentre il capo della comunità si appresta a dire le ultime parole a ricordo della donna un cane randagio si avvicina a voi mugulando, come se condividesse il vostro dolore. È magro, pare malaticcio, ma è vivo. Poi lancia un piccolo ululato simile a quello che qualcuno di voi ha sentito qualche giorno fa mentre era di guardia”</em>
+
+IL CANE è quello che ha avvisato i Personaggi del Nocturno (se hanno giocato la Scena) e anche quello che rubava il cibo marcio (ma questo i PG non lo sanno ancora), è terrorizzato dagli Erranti. Quando li sente ulula (quindi non erano gli Erranti quelli nell’introduzione, ma i PG non lo sanno ancora). Potrebbe diventare un sistema di allarme. Oppure attirare pericoli. Possibilità: tenerlo come animale da guardia, mangiarlo, lasciarlo andare
+
+“<em>La sera tutta la Comunità è a cena assieme. Da una finestra qualcuno intravede il cane che osserva la porta chiusa del magazzino del cibo.”</em>
+<h4><strong>Atmosfera</strong></h4>
+Le persone sono cambiate. Più magre. Più dure. Più silenziose. <strong>Chiedere ai personaggi: </strong>Cosa fate durante la cena? E dopo che vi hanno fatto notare il cane? Il cibo scarseggia e qualcuno fa una battuta <em>“magari potremmo mangiarci quel cane. Un po’ di proteine animali non ci farebbero male</em>”
+
+<em>“Qualcuno è d’accordo altri si oppongono. Una donna dice «Lasciate stare quel povero cane. In fondo siamo ancora vivi.» Ivo «Non tutti.» Silenzio. Qualcuno chiede ai PG: «Chi siamo diventati?»” </em>
+
+<strong>Chiedere ai personaggi: </strong>La comunità ora come è: Più piccola? Militarizzata? Spaccata? Unita ancora di più dalle difficoltà? Cosa progettate di fare per riprendervi per il futuro? Con chi ne parlate mentre sparecchiate
+
+In realtà c’è cibo a sufficienza per un'altra settimana e qualche piccolo animale selvaggio sta uscendo dal letargo, dopo le decisioni vedono che nel cortile si è avventurato uno scoiattolo
+
+<strong>Chiusura della scena (Recupero del prescelto): </strong>“<em>Al termine della cena tutti stanno collaborando per sistemare. Voi, che vi eravate fermati a parlare con Ivo e con il capo della comunità del vostro futuro, siete gli ultimi a uscire e chiudete la porta della sala dove avete cenato tutti riuniti questa sera. La notte è limpida e la luna piena illumina le case, le temperature iniziano ad essere meno rigide finalmente. In lontananza uno scoiattolo attraversa il cortile e si infila in un buco della recinzione, verso il bosco. L’inverno è finito. Ma il mondo creato dalla Piaga no. E dentro tutti voi c’è un dubbio che attanaglia la vostra mente: se poteste tornare a quella infame e fottuta prima notte…Fareste la stessa scelta?”</em>
+
+</div>
+
+<footer>
+Archivio • Documento recuperato dagli Archivi della Comunità "I Deragliati" - Anno 77 Dopo La Piaga
+</footer>
+
+</div>
+
+<div class="fog-front"></div>
+
+<audio autoplay loop>
+<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3f3bbd6d41.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+/* NEVE PROFONDITÀ */
+
+function createSnow(layer,count,size,maxDuration){
+
+let container=document.getElementById(layer);
+
+for(let i=0;i<count;i++){
+
+let flake=document.createElement("div");
+flake.className="flake";
+
+let s=Math.random()*size;
+
+flake.style.width=s+"px";
+flake.style.height=s+"px";
+flake.style.left=Math.random()*100+"%";
+
+flake.style.opacity=Math.random();
+
+flake.style.animationDuration=(5+Math.random()*maxDuration)+"s";
+
+container.appendChild(flake);
+
+}
+
+}
+
+createSnow("snowFar",80,2,20)
+createSnow("snowMid",70,4,15)
+createSnow("snowNear",60,7,10)
+
+/* CONTAMINAZIONE CHE SI ESPANDE */
+
+const infection=document.getElementById("infection")
+
+function growVein(){
+
+let vein=document.createElement("div")
+
+vein.className="vein"
+
+vein.style.left=Math.random()*100+"%"
+vein.style.top=Math.random()*100+"%"
+
+vein.style.transform="rotate("+Math.random()*360+"deg)"
+
+infection.appendChild(vein)
+
+}
+
+setInterval(growVein,3000)
+
+</script>
+
+</body>
+</html>
+```
